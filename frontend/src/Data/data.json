@@ -1,0 +1,2190 @@
+{
+  "breakfast": [
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i302.png",
+      "food": "Egg scrambled",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "328 cals",
+          "weight": "220 g"
+        },
+        {
+          "qty": "large egg",
+          "cals": "91 cals",
+          "weight": "61 g"
+        },
+        {
+          "qty": "tbsp",
+          "cals": "21 cals",
+          "weight": "14 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "42 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "676 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": "0.9 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "41 cals",
+          "weight": "27.5 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "7 cals",
+          "weight": "4.6 g"
+        },
+        {
+          "qty": "medium",
+          "cals": "72 cals",
+          "weight": "48 g"
+        },
+        {
+          "qty": "small",
+          "cals": "57 cals",
+          "weight": "38 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i101.png",
+      "food": "Milk",
+      "quantity": [
+        {
+          "qty": "240 ml",
+          "cals": "130 cals",
+          "weight": ""
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": ""
+        },
+        {
+          "qty": "cup",
+          "cals": "130 cals",
+          "weight": ""
+        },
+        {
+          "qty": "fl oz",
+          "cals": "16 cals",
+          "weight": ""
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "8 cals",
+          "weight": ""
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "3 cals",
+          "weight": ""
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i627.png",
+      "food": "Orange juice",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "112 cals",
+          "weight": "248 g"
+        },
+        {
+          "qty": "fruit yield",
+          "cals": "39 cals",
+          "weight": "86 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "13 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "204 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "14 cals",
+          "weight": "31 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "2 cals",
+          "weight": "5.2 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "7 cals",
+          "weight": "15.5 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i301.png",
+      "food": "Egg",
+      "quantity": [
+        {
+          "qty": "large egg",
+          "cals": "72 cals",
+          "weight": "50 g"
+        },
+        {
+          "qty": "extra large",
+          "cals": "83 cals",
+          "weight": "58 g"
+        },
+        {
+          "qty": "jumbo",
+          "cals": "93 cals",
+          "weight": "65 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "347 cals",
+          "weight": "243 g"
+        },
+        {
+          "qty": "medium",
+          "cals": "63 cals",
+          "weight": "44 g"
+        },
+        {
+          "qty": "small",
+          "cals": "53 cals",
+          "weight": "37 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "41 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "649 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "43 cals",
+          "weight": "30.4 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "7 cals",
+          "weight": "5.1 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "22 cals",
+          "weight": "15.5 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i535.png",
+      "food": "Whole-wheat bread",
+      "quantity": [
+        {
+          "qty": "slice",
+          "cals": "132 cals",
+          "weight": "42 g"
+        },
+        {
+          "qty": "slice, thin",
+          "cals": "92 cals",
+          "weight": "30 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "89 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "1426 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "3 cals",
+          "weight": "1 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i611.png",
+      "food": "Bananas",
+      "quantity": [
+        {
+          "qty": "medium, about 7' long",
+          "cals": "105 cals",
+          "weight": "118 g"
+        },
+        {
+          "qty": "cup, mashed",
+          "cals": "200 cals",
+          "weight": "225 g"
+        },
+        {
+          "qty": "cup, sliced",
+          "cals": "133 cals",
+          "weight": "150 g"
+        },
+        {
+          "qty": "extra small, less than 6' long",
+          "cals": "72 cals",
+          "weight": "81 g"
+        },
+        {
+          "qty": "small, about 6' long",
+          "cals": "90 cals",
+          "weight": "101 g"
+        },
+        {
+          "qty": "large, about 8' long",
+          "cals": "121 cals",
+          "weight": "136 g"
+        },
+        {
+          "qty": "extra large, about 9' or long",
+          "cals": "135 cals",
+          "weight": "152 g"
+        },
+        {
+          "qty": "serving",
+          "cals": "112 cals",
+          "weight": "126 g"
+        },
+        {
+          "qty": "small (6' to 6-7/8' long)",
+          "cals": "90 cals",
+          "weight": "101 g"
+        },
+        {
+          "qty": "medium  (7' to 7/8' long)",
+          "cals": "105 cals",
+          "weight": "118 g"
+        },
+        {
+          "qty": "large (8' to 9' long)",
+          "cals": "121 cals",
+          "weight": "136 g"
+        },
+        {
+          "qty": "extra large (9' or longer)",
+          "cals": "135 cals",
+          "weight": "152 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "25 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "404 cals",
+          "weight": "453.6 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i606.png",
+      "food": "Blueberries",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "83 cals",
+          "weight": "145 g"
+        },
+        {
+          "qty": "pint",
+          "cals": "229 cals",
+          "weight": "402 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "16 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "259 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "0.6 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "10 cals",
+          "weight": "18.1 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "2 cals",
+          "weight": "3 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "5 cals",
+          "weight": "9.1 g"
+        },
+        {
+          "qty": "50 berries",
+          "cals": "39 cals",
+          "weight": "68 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i23.png",
+      "food": "Black Coffee, no sugar",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "2 cals",
+          "weight": "237 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "0 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "5 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "0 cals",
+          "weight": "29.6 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "0 cals",
+          "weight": "4.9 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "0 cals",
+          "weight": "14.8 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i901.png",
+      "food": "Sugar",
+      "quantity": [
+        {
+          "qty": "tsp",
+          "cals": "16 cals",
+          "weight": "4.2 g"
+        },
+        {
+          "qty": "packet",
+          "cals": "11 cals",
+          "weight": "2.8 g"
+        },
+        {
+          "qty": "cube",
+          "cals": "9 cals",
+          "weight": "2.3 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "774 cals",
+          "weight": "200 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "110 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "4 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "1755 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "3 cals",
+          "weight": "0.8 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "98 cals",
+          "weight": "25.2 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "49 cals",
+          "weight": "12.6 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i802.png",
+      "food": " Butter unsalted",
+      "quantity": [
+        {
+          "qty": "tbsp",
+          "cals": "102 cals",
+          "weight": "14.2 g"
+        },
+        {
+          "qty": "pat (1'sq, 1/3' high)",
+          "cals": "36 cals",
+          "weight": "5 g"
+        },
+        {
+          "qty": "stick",
+          "cals": "810 cals",
+          "weight": "113 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "1628 cals",
+          "weight": "227 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "203 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "7 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "3252 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "7 cals",
+          "weight": "0.9 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "204 cals",
+          "weight": "28.4 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "34 cals",
+          "weight": "4.7 g"
+        }
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i302.png",
+      "food": "Egg scrambled",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "328 cals",
+          "weight": "220 g"
+        },
+        {
+          "qty": "large egg",
+          "cals": "91 cals",
+          "weight": "61 g"
+        },
+        {
+          "qty": "tbsp",
+          "cals": "21 cals",
+          "weight": "14 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "42 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "676 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": "0.9 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "41 cals",
+          "weight": "27.5 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "7 cals",
+          "weight": "4.6 g"
+        },
+        {
+          "qty": "medium",
+          "cals": "72 cals",
+          "weight": "48 g"
+        },
+        {
+          "qty": "small",
+          "cals": "57 cals",
+          "weight": "38 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i101.png",
+      "food": "Milk",
+      "quantity": [
+        {
+          "qty": "240 ml",
+          "cals": "130 cals",
+          "weight": ""
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": ""
+        },
+        {
+          "qty": "cup",
+          "cals": "130 cals",
+          "weight": ""
+        },
+        {
+          "qty": "fl oz",
+          "cals": "16 cals",
+          "weight": ""
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "8 cals",
+          "weight": ""
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "3 cals",
+          "weight": ""
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i627.png",
+      "food": "Orange juice",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "112 cals",
+          "weight": "248 g"
+        },
+        {
+          "qty": "fruit yield",
+          "cals": "39 cals",
+          "weight": "86 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "13 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "204 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "14 cals",
+          "weight": "31 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "2 cals",
+          "weight": "5.2 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "7 cals",
+          "weight": "15.5 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i301.png",
+      "food": "Egg",
+      "quantity": [
+        {
+          "qty": "large egg",
+          "cals": "72 cals",
+          "weight": "50 g"
+        },
+        {
+          "qty": "extra large",
+          "cals": "83 cals",
+          "weight": "58 g"
+        },
+        {
+          "qty": "junmbo",
+          "cals": "93 cals",
+          "weight": "65 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "347 cals",
+          "weight": "243 g"
+        },
+        {
+          "qty": "medium",
+          "cals": "63 cals",
+          "weight": "44 g"
+        },
+        {
+          "qty": "small",
+          "cals": "53 cals",
+          "weight": "37 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "41 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "649 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "43 cals",
+          "weight": "30.4 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "7 cals",
+          "weight": "5.1 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "22 cals",
+          "weight": "15.5 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i535.png",
+      "food": "Whole-wheat bread",
+      "quantity": [
+        {
+          "qty": "slice",
+          "cals": "132 cals",
+          "weight": "42 g"
+        },
+        {
+          "qty": "slice, thin",
+          "cals": "92 cals",
+          "weight": "30 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "89 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "1426 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "3 cals",
+          "weight": "1 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i611.png",
+      "food": "Bananas",
+      "quantity": [
+        {
+          "qty": "medium, about 7' long",
+          "cals": "105 cals",
+          "weight": "118 g"
+        },
+        {
+          "qty": "cup, mashed",
+          "cals": "200 cals",
+          "weight": "225 g"
+        },
+        {
+          "qty": "cup, sliced",
+          "cals": "133 cals",
+          "weight": "150 g"
+        },
+        {
+          "qty": "extra small, less than 6' long",
+          "cals": "72 cals",
+          "weight": "81 g"
+        },
+        {
+          "qty": "small, about 6' long",
+          "cals": "90 cals",
+          "weight": "101 g"
+        },
+        {
+          "qty": "large, about 8' long",
+          "cals": "121 cals",
+          "weight": "136 g"
+        },
+        {
+          "qty": "extra large, about 9' or long",
+          "cals": "135 cals",
+          "weight": "152 g"
+        },
+        {
+          "qty": "serving",
+          "cals": "112 cals",
+          "weight": "126 g"
+        },
+        {
+          "qty": "small (6' to 6-7/8' long)",
+          "cals": "90 cals",
+          "weight": "101 g"
+        },
+        {
+          "qty": "medium  (7' to 7/8' long)",
+          "cals": "105 cals",
+          "weight": "118 g"
+        },
+        {
+          "qty": "large (8' to 9' long)",
+          "cals": "121 cals",
+          "weight": "136 g"
+        },
+        {
+          "qty": "extra large (9' or longer)",
+          "cals": "135 cals",
+          "weight": "152 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "25 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "404 cals",
+          "weight": "453.6 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i606.png",
+      "food": "Blueberries",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "83 cals",
+          "weight": "145 g"
+        },
+        {
+          "qty": "pint",
+          "cals": "229 cals",
+          "weight": "402 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "16 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "259 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "0.6 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "10 cals",
+          "weight": "18.1 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "2 cals",
+          "weight": "3 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "5 cals",
+          "weight": "9.1 g"
+        },
+        {
+          "qty": "50 berries",
+          "cals": "39 cals",
+          "weight": "68 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i23.png",
+      "food": "Black Coffee, no sugar",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "2 cals",
+          "weight": "237 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "0 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "5 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "0 cals",
+          "weight": "29.6 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "0 cals",
+          "weight": "4.9 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "0 cals",
+          "weight": "14.8 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i901.png",
+      "food": "Sugar",
+      "quantity": [
+        {
+          "qty": "tsp",
+          "cals": "16 cals",
+          "weight": "4.2 g"
+        },
+        {
+          "qty": "packet",
+          "cals": "11 cals",
+          "weight": "2.8 g"
+        },
+        {
+          "qty": "cube",
+          "cals": "9 cals",
+          "weight": "2.3 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "774 cals",
+          "weight": "200 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "110 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "4 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "1755 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "3 cals",
+          "weight": "0.8 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "98 cals",
+          "weight": "25.2 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "49 cals",
+          "weight": "12.6 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i802.png",
+      "food": " Butter unsalted",
+      "quantity": [
+        {
+          "qty": "tbsp",
+          "cals": "102 cals",
+          "weight": "14.2 g"
+        },
+        {
+          "qty": "pat (1'sq, 1/3' high)",
+          "cals": "36 cals",
+          "weight": "5 g"
+        },
+        {
+          "qty": "stick",
+          "cals": "810 cals",
+          "weight": "113 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "1628 cals",
+          "weight": "227 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "203 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "7 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "3252 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "7 cals",
+          "weight": "0.9 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "204 cals",
+          "weight": "28.4 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "34 cals",
+          "weight": "4.7 g"
+        }
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i302.png",
+      "food": "Egg scrambled",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "328 cals",
+          "weight": "220 g"
+        },
+        {
+          "qty": "large egg",
+          "cals": "91 cals",
+          "weight": "61 g"
+        },
+        {
+          "qty": "tbsp",
+          "cals": "21 cals",
+          "weight": "14 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "42 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "676 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": "0.9 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "41 cals",
+          "weight": "27.5 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "7 cals",
+          "weight": "4.6 g"
+        },
+        {
+          "qty": "medium",
+          "cals": "72 cals",
+          "weight": "48 g"
+        },
+        {
+          "qty": "small",
+          "cals": "57 cals",
+          "weight": "38 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i101.png",
+      "food": "Milk",
+      "quantity": [
+        {
+          "qty": "240 ml",
+          "cals": "130 cals",
+          "weight": ""
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": ""
+        },
+        {
+          "qty": "cup",
+          "cals": "130 cals",
+          "weight": ""
+        },
+        {
+          "qty": "fl oz",
+          "cals": "16 cals",
+          "weight": ""
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "8 cals",
+          "weight": ""
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "3 cals",
+          "weight": ""
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i627.png",
+      "food": "Orange juice",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "112 cals",
+          "weight": "248 g"
+        },
+        {
+          "qty": "fruit yield",
+          "cals": "39 cals",
+          "weight": "86 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "13 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "204 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "14 cals",
+          "weight": "31 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "2 cals",
+          "weight": "5.2 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "7 cals",
+          "weight": "15.5 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i301.png",
+      "food": "Egg",
+      "quantity": [
+        {
+          "qty": "large egg",
+          "cals": "72 cals",
+          "weight": "50 g"
+        },
+        {
+          "qty": "extra large",
+          "cals": "83 cals",
+          "weight": "58 g"
+        },
+        {
+          "qty": "junmbo",
+          "cals": "93 cals",
+          "weight": "65 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "347 cals",
+          "weight": "243 g"
+        },
+        {
+          "qty": "medium",
+          "cals": "63 cals",
+          "weight": "44 g"
+        },
+        {
+          "qty": "small",
+          "cals": "53 cals",
+          "weight": "37 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "41 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "649 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "43 cals",
+          "weight": "30.4 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "7 cals",
+          "weight": "5.1 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "22 cals",
+          "weight": "15.5 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i535.png",
+      "food": "Whole-wheat bread",
+      "quantity": [
+        {
+          "qty": "slice",
+          "cals": "132 cals",
+          "weight": "42 g"
+        },
+        {
+          "qty": "slice, thin",
+          "cals": "92 cals",
+          "weight": "30 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "89 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "1426 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "3 cals",
+          "weight": "1 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i611.png",
+      "food": "Bananas",
+      "quantity": [
+        {
+          "qty": "medium, about 7' long",
+          "cals": "105 cals",
+          "weight": "118 g"
+        },
+        {
+          "qty": "cup, mashed",
+          "cals": "200 cals",
+          "weight": "225 g"
+        },
+        {
+          "qty": "cup, sliced",
+          "cals": "133 cals",
+          "weight": "150 g"
+        },
+        {
+          "qty": "extra small, less than 6' long",
+          "cals": "72 cals",
+          "weight": "81 g"
+        },
+        {
+          "qty": "small, about 6' long",
+          "cals": "90 cals",
+          "weight": "101 g"
+        },
+        {
+          "qty": "large, about 8' long",
+          "cals": "121 cals",
+          "weight": "136 g"
+        },
+        {
+          "qty": "extra large, about 9' or long",
+          "cals": "135 cals",
+          "weight": "152 g"
+        },
+        {
+          "qty": "serving",
+          "cals": "112 cals",
+          "weight": "126 g"
+        },
+        {
+          "qty": "small (6' to 6-7/8' long)",
+          "cals": "90 cals",
+          "weight": "101 g"
+        },
+        {
+          "qty": "medium  (7' to 7/8' long)",
+          "cals": "105 cals",
+          "weight": "118 g"
+        },
+        {
+          "qty": "large (8' to 9' long)",
+          "cals": "121 cals",
+          "weight": "136 g"
+        },
+        {
+          "qty": "extra large (9' or longer)",
+          "cals": "135 cals",
+          "weight": "152 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "25 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "404 cals",
+          "weight": "453.6 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i606.png",
+      "food": "Blueberries",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "83 cals",
+          "weight": "145 g"
+        },
+        {
+          "qty": "pint",
+          "cals": "229 cals",
+          "weight": "402 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "16 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "259 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "0.6 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "10 cals",
+          "weight": "18.1 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "2 cals",
+          "weight": "3 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "5 cals",
+          "weight": "9.1 g"
+        },
+        {
+          "qty": "50 berries",
+          "cals": "39 cals",
+          "weight": "68 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i23.png",
+      "food": "Black Coffee, no sugar",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "2 cals",
+          "weight": "237 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "0 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "5 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "0 cals",
+          "weight": "29.6 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "0 cals",
+          "weight": "4.9 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "0 cals",
+          "weight": "14.8 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i901.png",
+      "food": "Sugar",
+      "quantity": [
+        {
+          "qty": "tsp",
+          "cals": "16 cals",
+          "weight": "4.2 g"
+        },
+        {
+          "qty": "packet",
+          "cals": "11 cals",
+          "weight": "2.8 g"
+        },
+        {
+          "qty": "cube",
+          "cals": "9 cals",
+          "weight": "2.3 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "774 cals",
+          "weight": "200 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "110 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "4 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "1755 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "3 cals",
+          "weight": "0.8 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "98 cals",
+          "weight": "25.2 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "49 cals",
+          "weight": "12.6 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i802.png",
+      "food": " Butter unsalted",
+      "quantity": [
+        {
+          "qty": "tbsp",
+          "cals": "102 cals",
+          "weight": "14.2 g"
+        },
+        {
+          "qty": "pat (1'sq, 1/3' high)",
+          "cals": "36 cals",
+          "weight": "5 g"
+        },
+        {
+          "qty": "stick",
+          "cals": "810 cals",
+          "weight": "113 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "1628 cals",
+          "weight": "227 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "203 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "7 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "3252 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "7 cals",
+          "weight": "0.9 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "204 cals",
+          "weight": "28.4 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "34 cals",
+          "weight": "4.7 g"
+        }
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i302.png",
+      "food": "Egg scrambled",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "328 cals",
+          "weight": "220 g"
+        },
+        {
+          "qty": "large egg",
+          "cals": "91 cals",
+          "weight": "61 g"
+        },
+        {
+          "qty": "tbsp",
+          "cals": "21 cals",
+          "weight": "14 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "42 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "676 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": "0.9 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "41 cals",
+          "weight": "27.5 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "7 cals",
+          "weight": "4.6 g"
+        },
+        {
+          "qty": "medium",
+          "cals": "72 cals",
+          "weight": "48 g"
+        },
+        {
+          "qty": "small",
+          "cals": "57 cals",
+          "weight": "38 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i101.png",
+      "food": "Milk",
+      "quantity": [
+        {
+          "qty": "240 ml",
+          "cals": "130 cals",
+          "weight": ""
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": ""
+        },
+        {
+          "qty": "cup",
+          "cals": "130 cals",
+          "weight": ""
+        },
+        {
+          "qty": "fl oz",
+          "cals": "16 cals",
+          "weight": ""
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "8 cals",
+          "weight": ""
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "3 cals",
+          "weight": ""
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i627.png",
+      "food": "Orange juice",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "112 cals",
+          "weight": "248 g"
+        },
+        {
+          "qty": "fruit yield",
+          "cals": "39 cals",
+          "weight": "86 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "13 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "204 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "14 cals",
+          "weight": "31 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "2 cals",
+          "weight": "5.2 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "7 cals",
+          "weight": "15.5 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i301.png",
+      "food": "Egg",
+      "quantity": [
+        {
+          "qty": "large egg",
+          "cals": "72 cals",
+          "weight": "50 g"
+        },
+        {
+          "qty": "extra large",
+          "cals": "83 cals",
+          "weight": "58 g"
+        },
+        {
+          "qty": "junmbo",
+          "cals": "93 cals",
+          "weight": "65 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "347 cals",
+          "weight": "243 g"
+        },
+        {
+          "qty": "medium",
+          "cals": "63 cals",
+          "weight": "44 g"
+        },
+        {
+          "qty": "small",
+          "cals": "53 cals",
+          "weight": "37 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "41 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "649 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "43 cals",
+          "weight": "30.4 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "7 cals",
+          "weight": "5.1 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "22 cals",
+          "weight": "15.5 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i535.png",
+      "food": "Whole-wheat bread",
+      "quantity": [
+        {
+          "qty": "slice",
+          "cals": "132 cals",
+          "weight": "42 g"
+        },
+        {
+          "qty": "slice, thin",
+          "cals": "92 cals",
+          "weight": "30 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "89 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "1426 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "3 cals",
+          "weight": "1 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i611.png",
+      "food": "Bananas",
+      "quantity": [
+        {
+          "qty": "medium, about 7' long",
+          "cals": "105 cals",
+          "weight": "118 g"
+        },
+        {
+          "qty": "cup, mashed",
+          "cals": "200 cals",
+          "weight": "225 g"
+        },
+        {
+          "qty": "cup, sliced",
+          "cals": "133 cals",
+          "weight": "150 g"
+        },
+        {
+          "qty": "extra small, less than 6' long",
+          "cals": "72 cals",
+          "weight": "81 g"
+        },
+        {
+          "qty": "small, about 6' long",
+          "cals": "90 cals",
+          "weight": "101 g"
+        },
+        {
+          "qty": "large, about 8' long",
+          "cals": "121 cals",
+          "weight": "136 g"
+        },
+        {
+          "qty": "extra large, about 9' or long",
+          "cals": "135 cals",
+          "weight": "152 g"
+        },
+        {
+          "qty": "serving",
+          "cals": "112 cals",
+          "weight": "126 g"
+        },
+        {
+          "qty": "small (6' to 6-7/8' long)",
+          "cals": "90 cals",
+          "weight": "101 g"
+        },
+        {
+          "qty": "medium  (7' to 7/8' long)",
+          "cals": "105 cals",
+          "weight": "118 g"
+        },
+        {
+          "qty": "large (8' to 9' long)",
+          "cals": "121 cals",
+          "weight": "136 g"
+        },
+        {
+          "qty": "extra large (9' or longer)",
+          "cals": "135 cals",
+          "weight": "152 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "25 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "404 cals",
+          "weight": "453.6 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i606.png",
+      "food": "Blueberries",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "83 cals",
+          "weight": "145 g"
+        },
+        {
+          "qty": "pint",
+          "cals": "229 cals",
+          "weight": "402 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "16 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "1 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "259 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "0.6 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "10 cals",
+          "weight": "18.1 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "2 cals",
+          "weight": "3 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "5 cals",
+          "weight": "9.1 g"
+        },
+        {
+          "qty": "50 berries",
+          "cals": "39 cals",
+          "weight": "68 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i23.png",
+      "food": "Black Coffee, no sugar",
+      "quantity": [
+        {
+          "qty": "cup",
+          "cals": "2 cals",
+          "weight": "237 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "0 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "5 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "0 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "0 cals",
+          "weight": "29.6 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "0 cals",
+          "weight": "4.9 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "0 cals",
+          "weight": "14.8 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i901.png",
+      "food": "Sugar",
+      "quantity": [
+        {
+          "qty": "tsp",
+          "cals": "16 cals",
+          "weight": "4.2 g"
+        },
+        {
+          "qty": "packet",
+          "cals": "11 cals",
+          "weight": "2.8 g"
+        },
+        {
+          "qty": "cube",
+          "cals": "9 cals",
+          "weight": "2.3 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "774 cals",
+          "weight": "200 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "110 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "4 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "1755 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "3 cals",
+          "weight": "0.8 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "98 cals",
+          "weight": "25.2 g"
+        },
+        {
+          "qty": "tablespoon",
+          "cals": "49 cals",
+          "weight": "12.6 g"
+        }
+      ]
+    },
+    {
+      "img_url": "https://s3.amazonaws.com/img.mynetdiary.com/bean/i802.png",
+      "food": " Butter unsalted",
+      "quantity": [
+        {
+          "qty": "tbsp",
+          "cals": "102 cals",
+          "weight": "14.2 g"
+        },
+        {
+          "qty": "pat (1'sq, 1/3' high)",
+          "cals": "36 cals",
+          "weight": "5 g"
+        },
+        {
+          "qty": "stick",
+          "cals": "810 cals",
+          "weight": "113 g"
+        },
+        {
+          "qty": "cup",
+          "cals": "1628 cals",
+          "weight": "227 g"
+        },
+        {
+          "qty": "oz",
+          "cals": "203 cals",
+          "weight": "28.3 g"
+        },
+        {
+          "qty": "gram",
+          "cals": "7 cals",
+          "weight": "1 g"
+        },
+        {
+          "qty": "lb",
+          "cals": "3252 cals",
+          "weight": "453.6 g"
+        },
+        {
+          "qty": "ml",
+          "cals": "7 cals",
+          "weight": "0.9 g"
+        },
+        {
+          "qty": "fl oz",
+          "cals": "204 cals",
+          "weight": "28.4 g"
+        },
+        {
+          "qty": "teaspoon",
+          "cals": "34 cals",
+          "weight": "4.7 g"
+        }
+      ]
+    }
+  ]
+}
