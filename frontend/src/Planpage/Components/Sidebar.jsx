@@ -45,11 +45,7 @@ const Sidebar = () => {
           />
         </div>
         <div className={styles.optiontext}>
-          <Select
-            size="lg"
-            variant="unstyled"
-        
-          >
+          <Select size="lg" variant="unstyled">
             <option value="My_Nutrient" className={styles.option}>
               My Nutrient
             </option>

@@ -1,7 +1,60 @@
-.container{
+.container {
+  width: 100%;
+  border: 1px solid blue;
+  height: auto;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+.innercontainer {
+  width: 98%;
+
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+.innercontainer h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+}
+.modalh1tag {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: green;
+  font-size: 22px;
+  font-style: normal;
+}
+@media screen and (max-width: 940px) {
+  .container {
+    margin-top: 50px;
+    border: 1px solid red;
+  }
+  .innercontainer {
     width: 100%;
-    border: 1px solid blue;
-    height: 500px;
-    margin-right: 30px;
-    margin-left: 10px;
+ 
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    margin: auto;
+  }
+  .innercontainer {
+    width: 100%;
+
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin: auto;
+  }
 }

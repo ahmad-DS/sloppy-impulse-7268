@@ -1,45 +1,68 @@
-.sidecontainer{
-    width: 30%;
+.sidecontainer {
+  width: 30%;
 
-    height: 700px;
+  height: auto;
 }
-h1{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    
+.text h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
 }
-.logo img{
-width: 30px;
-height: 30px;
+.logo img {
+  width: 30px;
+  height: 30px;
 }
-.div1{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
- 
-    height: 60px;
-    align-items: center;
+.logo {
+  width: 15%;
 }
-.div1:hover{
-    background-color: #c1c1c1c1;
+.div1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  height: 60px;
+  align-items: center;
 }
-.div1:focus{
-    background-color: #c1c1c1c1;
+.div1:hover {
+  background-color: #c1c1c1c1;
 }
-.text{
+.div1:focus {
+  background-color: #c1c1c1c1;
+}
+.text {
+  width: 55%;
+  box-sizing: border-box;
+}
+
+.decorated:hover {
+  background-color: red;
+}
+
+option:hover {
+  background-color: #000000;
+}
+
+@media screen and (max-width: 940px) {
+  .sidecontainer {
+    width: 40%;
+
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .sidecontainer {
     width: 55%;
-    
-}
-.optiontext{
-    width: 65%;
+
+    height: auto;
+  }
 }
 
- .decorated:hover{
-    background-color: red;
-}
+@media screen and (max-width: 340px) {
+  .sidecontainer {
+    width: 70%;
 
-option:hover{
-    background-color: #000000;
+    height: auto;
+  }
 }

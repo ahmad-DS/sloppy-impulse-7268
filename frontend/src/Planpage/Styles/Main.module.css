@@ -13,3 +13,9 @@ height: auto;
     margin-top: 30px;
     justify-content: space-between;
 }
+@media screen and (max-width: 940px) {
+.maininner{
+    width: 100%;
+    flex-direction: column;
+}
+}
