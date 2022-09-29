@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   Modal,
   ModalOverlay,
@@ -13,29 +12,28 @@ import {
   FormLabel,
   Input,
   useDisclosure,
+  Box,
 } from "@chakra-ui/react";
-const Modalcomp = () => {
-  const calvalue = 2370;
+const Daily = () => {
+  const daily_calorie = 2600;
 
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
-
+  const handlechange = () => {
+    console.log("e");
+  };
   return (
     <>
-      <Button onClick={onOpen} variant="unstyled">
-        <h1
-          style={{
+      <Box onClick={onOpen} width={"30%"} variant="unstyled">
+        <Input type="text" value={daily_calorie}   style={{
             color: "green",
             fontFamily: "Roboto",
             fontWeight: 400,
             fontSize: "22px",
-          }}
-        >
-          {calvalue}
-        </h1>
-      </Button>
+          }} onChange={handlechange} />
+      </Box>
 
       <Modal
         initialFocusRef={initialRef}
@@ -45,15 +43,15 @@ const Modalcomp = () => {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Weight</ModalHeader>
+          <ModalHeader  >Daily Food Calorie Budget</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
+              <FormLabel>Daily Food Calorie Budget</FormLabel>
               <Input
                 ref={initialRef}
-                placeholder="Cals"
-                value={calvalue}
-                variant="unstyled"
+                value={daily_calorie}
+                onChange={handlechange}
               />
             </FormControl>
 
@@ -67,21 +65,17 @@ const Modalcomp = () => {
                     justifyContent: "center",
                   }}
                 >
-                  Please enter your Daily Food Calorie Budget. MyNetDiary
-                  recommends 2,869 calories based on your weight target. To gain
-                  1 lb/week you need to consume 2,370 weight maintenance
-                  calories + 499 calories of daily surplus required by your
-                  weight target.
+                  Enter your target weight in pounds, e.g 140.5
                 </h5>
               </FormLabel>
             </FormControl>
           </ModalBody>
 
           <ModalFooter>
-            <Button onClick={onClose}>Cancel</Button>
             <Button colorScheme="blue" mr={3}>
               Save
             </Button>
+            <Button onClick={onClose}>Cancel</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
@@ -89,4 +83,4 @@ const Modalcomp = () => {
   );
 };
 
-export default Modalcomp;
+export default Daily;

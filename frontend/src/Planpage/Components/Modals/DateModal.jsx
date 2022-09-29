@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   Modal,
   ModalOverlay,
@@ -13,29 +12,34 @@ import {
   FormLabel,
   Input,
   useDisclosure,
+  Box,
 } from "@chakra-ui/react";
-const Modalcomp = () => {
-  const calvalue = 2370;
+const DateModal = () => {
+ const [date,setDate]=React.useState()
+  const calculatedate = () => {
+    let today = new Date();
+  let year = today.getFullYear();
+  let month = String(today.getMonth()).padStart(2, 0);
+  let date = String(today.getDate()).padStart(2, 0);
+ let datepattern = year + "-" + month + "-" + date;
+  setDate(datepattern)
+  };
+React.useEffect(() => {
+    calculatedate()
+}, [date])
 
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const current_weigth = `${136} lbs`;
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
-
+  const handlechange = () => {
+    console.log("e");
+  };
   return (
     <>
-      <Button onClick={onOpen} variant="unstyled">
-        <h1
-          style={{
-            color: "green",
-            fontFamily: "Roboto",
-            fontWeight: 400,
-            fontSize: "22px",
-          }}
-        >
-          {calvalue}
-        </h1>
-      </Button>
+      <Box onClick={onOpen} width={"30%"} variant="unstyled">
+        <Input type="date" value={date} onChange={handlechange} />
+      </Box>
 
       <Modal
         initialFocusRef={initialRef}
@@ -45,15 +49,16 @@ const Modalcomp = () => {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Weight</ModalHeader>
+   
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
+              <FormLabel>Target Weight, lbs</FormLabel>
               <Input
                 ref={initialRef}
-                placeholder="Cals"
-                value={calvalue}
-                variant="unstyled"
+                value={date}
+                type="date"
+                onChange={handlechange}
               />
             </FormControl>
 
@@ -67,21 +72,17 @@ const Modalcomp = () => {
                     justifyContent: "center",
                   }}
                 >
-                  Please enter your Daily Food Calorie Budget. MyNetDiary
-                  recommends 2,869 calories based on your weight target. To gain
-                  1 lb/week you need to consume 2,370 weight maintenance
-                  calories + 499 calories of daily surplus required by your
-                  weight target.
+                  Enter your target weight in pounds, e.g 140.5
                 </h5>
               </FormLabel>
             </FormControl>
           </ModalBody>
 
           <ModalFooter>
-            <Button onClick={onClose}>Cancel</Button>
             <Button colorScheme="blue" mr={3}>
               Save
             </Button>
+            <Button onClick={onClose}>Cancel</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
@@ -89,4 +90,4 @@ const Modalcomp = () => {
   );
 };
 
-export default Modalcomp;
+export default DateModal;

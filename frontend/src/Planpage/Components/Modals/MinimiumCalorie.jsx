@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   Modal,
   ModalOverlay,
@@ -13,29 +12,23 @@ import {
   FormLabel,
   Input,
   useDisclosure,
+  Box,
 } from "@chakra-ui/react";
-const Modalcomp = () => {
-  const calvalue = 2370;
+const MinimiumCalorie = () => {
+
 
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
-
+  const handlechange = () => {
+    console.log("e");
+  };
   return (
     <>
-      <Button onClick={onOpen} variant="unstyled">
-        <h1
-          style={{
-            color: "green",
-            fontFamily: "Roboto",
-            fontWeight: 400,
-            fontSize: "22px",
-          }}
-        >
-          {calvalue}
-        </h1>
-      </Button>
+      <Box onClick={onOpen} width={"30%"} variant="unstyled">
+        <Input type="text"  onChange={handlechange} />
+      </Box>
 
       <Modal
         initialFocusRef={initialRef}
@@ -45,15 +38,15 @@ const Modalcomp = () => {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Weight</ModalHeader>
+          <ModalHeader  >Minimum Calorie Budget</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
+            
               <Input
                 ref={initialRef}
-                placeholder="Cals"
-                value={calvalue}
-                variant="unstyled"
+                
+                onChange={handlechange}
               />
             </FormControl>
 
@@ -67,21 +60,17 @@ const Modalcomp = () => {
                     justifyContent: "center",
                   }}
                 >
-                  Please enter your Daily Food Calorie Budget. MyNetDiary
-                  recommends 2,869 calories based on your weight target. To gain
-                  1 lb/week you need to consume 2,370 weight maintenance
-                  calories + 499 calories of daily surplus required by your
-                  weight target.
+                 If you are on a medically supervised diet, you may need to adjust the minimum calorie budget. Please notice that this may be dangerous to you health and could be done only under guidance of a medical professional.
                 </h5>
               </FormLabel>
             </FormControl>
           </ModalBody>
 
           <ModalFooter>
-            <Button onClick={onClose}>Cancel</Button>
             <Button colorScheme="blue" mr={3}>
               Save
             </Button>
+            <Button onClick={onClose}>Cancel</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
@@ -89,4 +78,4 @@ const Modalcomp = () => {
   );
 };
 
-export default Modalcomp;
+export default MinimiumCalorie;

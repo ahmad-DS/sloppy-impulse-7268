@@ -6,9 +6,8 @@ const MainPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.maininner}>
-      <Sidebar></Sidebar>
-<Rigthbar></Rigthbar>
-
+        <Sidebar></Sidebar>
+        <Rigthbar/>
       </div>
     </div>
   );
