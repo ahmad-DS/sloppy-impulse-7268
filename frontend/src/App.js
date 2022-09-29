@@ -1,11 +1,13 @@
+import logo from "./logo.svg";
 import "./App.css";
-import FoodTable from "./Pages/FoodTable";
+import { Box } from "@chakra-ui/react";
+import UserPage from "./Pages/UserPage";
 
 function App() {
   return (
-    <div className="App">
-      <FoodTable />
-    </div>
+    <Box>
+      <UserPage />
+    </Box>
   );
 }
 
