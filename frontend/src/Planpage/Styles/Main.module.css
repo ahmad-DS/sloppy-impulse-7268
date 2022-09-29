@@ -7,7 +7,7 @@ height: auto;
 .maininner{
     width: 95%;
    
-    height: 500px;
+    height: auto;
     margin: auto;
     display: flex;
     margin-top: 30px;

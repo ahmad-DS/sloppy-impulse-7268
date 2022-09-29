@@ -4,6 +4,7 @@ import Modalcomp from "./Modalcomp";
 import Daily from "./Modals/Daily";
 import DateModal from "./Modals/DateModal";
 import MinimiumCalorie from "./Modals/MinimiumCalorie";
+import PersonalInfo from "./Modals/PersonalInfo";
 import TargetModal from "./Modals/TargetModal";
 import WeeklyRate from "./Modals/WeeklyRate";
 const Rigthbar = () => {
@@ -44,6 +45,12 @@ const Rigthbar = () => {
         <h1> Minimum Calorie Budget</h1>
 
         <MinimiumCalorie />
+      </div>
+
+      <div className={styles.innercontainerdiv1}>
+    
+
+        <PersonalInfo />
       </div>
     </div>
   );
