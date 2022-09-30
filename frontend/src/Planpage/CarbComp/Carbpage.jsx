@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../Styles/Carbpage.module.css";
 import {
   Button,
-    Slider,
+  Slider,
   SliderFilledTrack,
   SliderThumb,
   SliderTrack,
@@ -54,8 +54,11 @@ const Carbpage = () => {
           <Button backgroundColor={"white"} ml={"10px"}>
             Fat 35%
           </Button>
-          <Slider aria-label="slider-ex-2" colorScheme="blue" defaultValue={35}
-          onChangeEnd={(val) => console.log(val)}
+          <Slider
+            aria-label="slider-ex-2"
+            colorScheme="blue"
+            defaultValue={35}
+            onChangeEnd={(val) => console.log(val)}
           >
             <SliderTrack>
               <SliderFilledTrack />
