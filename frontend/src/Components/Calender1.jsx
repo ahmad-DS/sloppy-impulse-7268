@@ -1,6 +1,5 @@
 import Calendar from "react-calendar";
-import React, { useState } from 'react';
-import Calendar from 'react-calendar';
+import React, { useState } from "react";
 
 export default function Calender1() {
   const [value, onChange] = useState(new Date());
