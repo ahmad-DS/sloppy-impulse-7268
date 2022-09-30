@@ -7,6 +7,8 @@ import {
   SliderThumb,
   SliderTrack,
 } from "@chakra-ui/react";
+import FooterPlan from "../Components/PlanComp/FooterPlan";
+import Footer from "./Footer";
 
 const Carbpage = () => {
   return (
@@ -66,6 +68,9 @@ const Carbpage = () => {
             <SliderThumb />
           </Slider>
         </div>
+        <FooterPlan />
+<Footer/>
+
       </div>
     </div>
   );
