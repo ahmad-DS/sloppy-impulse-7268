@@ -1,12 +1,13 @@
 import React from "react";
-import styles from "../Styles/Right.module.css";
-import Modalcomp from "./Modalcomp";
-import Daily from "./Modals/Daily";
-import DateModal from "./Modals/DateModal";
-import MinimiumCalorie from "./Modals/MinimiumCalorie";
-import PersonalInfo from "./Modals/PersonalInfo";
-import TargetModal from "./Modals/TargetModal";
-import WeeklyRate from "./Modals/WeeklyRate";
+import styles from "../../Styles/Right.module.css";
+import Modalcomp from "../Modals/Modalcomp"
+import Daily from "../Modals/Daily";
+import DateModal from "../Modals/DateModal";
+import MinimiumCalorie from "../Modals/MinimiumCalorie";
+import PersonalInfo from "../Modals/PersonalInfo";
+import TargetModal from "../Modals/TargetModal";
+import WeeklyRate from "../Modals/WeeklyRate";
+import FooterPlan from "./FooterPlan";
 const Rigthbar = () => {
   return (
     <div className={styles.container}>
@@ -23,7 +24,7 @@ const Rigthbar = () => {
       <div className={styles.innercontainerdiv1}>
         <h1>Target Weight</h1>
 
-        <TargetModal />
+        <TargetModal/>
       </div>
 
       <div className={styles.innercontainerdiv1}>
@@ -48,9 +49,12 @@ const Rigthbar = () => {
       </div>
 
       <div className={styles.innercontainerdiv1}>
-    
-
         <PersonalInfo />
+      </div>
+
+
+      <div className={styles.footer}>
+      <FooterPlan/>
       </div>
     </div>
   );

@@ -1,10 +1,12 @@
 
-import MainPage from './Planpage/Components/MainPage';
+
+import SidebarRoutes from './Planpage/Routes/SidebarRoutes';
 
 function App() {
   return (
     <div className="App">
-    <MainPage/> 
+ <SidebarRoutes></SidebarRoutes> 
+
     </div>
   );
 }

@@ -27,12 +27,17 @@ const Daily = () => {
   return (
     <>
       <Box onClick={onOpen} width={"30%"} variant="unstyled">
-        <Input type="text" value={daily_calorie}   style={{
+        <Input
+          type="text"
+          value={daily_calorie}
+          style={{
             color: "green",
             fontFamily: "Roboto",
             fontWeight: 400,
             fontSize: "22px",
-          }} onChange={handlechange} />
+          }}
+          onChange={handlechange}
+        />
       </Box>
 
       <Modal
@@ -43,7 +48,7 @@ const Daily = () => {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader  >Daily Food Calorie Budget</ModalHeader>
+          <ModalHeader>Daily Food Calorie Budget</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>

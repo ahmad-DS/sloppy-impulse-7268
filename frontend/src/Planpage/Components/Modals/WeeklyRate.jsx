@@ -50,8 +50,8 @@ const WeeklyRate = () => {
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
-              {weeklyobj?.map((e) => (
-                <Stack spacing={5} direction="column">
+              {weeklyobj?.map((e,index) => (
+                <Stack spacing={5} direction="column" key={index}>
                   <Checkbox>{e.name}</Checkbox>
                 </Stack>
               ))}

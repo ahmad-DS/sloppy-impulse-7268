@@ -18,7 +18,7 @@ const Sidebar = () => {
           </div>
         </div>
       </Link>
-      <Link to="/Carbs">
+      <Link to="/carb">
         <div className={styles.div1}>
           <div className={styles.logo}>
             <img

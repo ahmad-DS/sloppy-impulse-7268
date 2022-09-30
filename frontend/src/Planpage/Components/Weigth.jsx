@@ -1,16 +1,17 @@
 import React from "react";
+
 import styles from "../Styles/Main.module.css";
-import Rigthbar from "./Rigthbar";
+import Rigthbar from "./PlanComp/Rigthbar";
 import Sidebar from "./Sidebar";
-const MainPage = () => {
+const Weigth = () => {
   return (
     <div className={styles.container}>
       <div className={styles.maininner}>
         <Sidebar></Sidebar>
-        <Rigthbar/>
+        <Rigthbar></Rigthbar>
       </div>
     </div>
   );
 };
 
-export default MainPage;
+export default Weigth;
