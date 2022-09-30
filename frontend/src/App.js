@@ -1,13 +1,14 @@
 
-
-import SidebarRoutes from './Planpage/Routes/SidebarRoutes';
+import logo from './logo.svg';
+import './App.css';
+import { Box } from '@chakra-ui/react';
+import UserPage from './Pages/UserPage';
 
 function App() {
   return (
-    <div className="App">
- <SidebarRoutes></SidebarRoutes> 
-
-    </div>
+    <Box>
+      <UserPage/>
+    </Box>
   );
 }
 
