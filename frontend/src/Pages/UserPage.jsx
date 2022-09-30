@@ -1,15 +1,12 @@
-import React from 'react';
-import Dashboard from '../Components/Dashboard';
-import UserNavbar from '../Components/UserNavbar';
-
+import React from "react";
+import Dashboard from "../Components/Dashboard";
 
 const UserPage = () => {
   return (
-	<>
-	<UserNavbar/>
-	<Dashboard/>
-	</>
-  )
-}
+    <>
+      <Dashboard />
+    </>
+  );
+};
 
-export default UserPage
+export default UserPage;
