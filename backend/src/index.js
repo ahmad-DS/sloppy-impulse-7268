@@ -1,10 +1,27 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const userRoute = require("./routes/users.routes");
-require('dotenv').config()
+const passport = require("./google auth/auth");
+
+require("dotenv").config();
+
 const app = express();
 app.use(express.json());
-app.use("/user",userRoute)
+
+app.get("/login",(req,res)=>{
+  res.send("login")
+})
+
+app.get('/auth/google',
+  passport.authenticate('google', { scope: ['profile','email'] }));
+
+app.get('/auth/google/callback', 
+  passport.authenticate('google', { failureRedirect: '/',session:false }),
+  function(req, res) {
+    // Successful authentication, redirect home.
+    console.log(req.user);
+    res.redirect('/login');
+  });
+
 app.listen(8080, async () => {
   try {
     await mongoose.connect(process.env.MONGO_URL);
@@ -14,3 +31,5 @@ app.listen(8080, async () => {
   }
   console.log("i am 8080");
 });
+
+
