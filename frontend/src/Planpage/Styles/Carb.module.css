@@ -1,0 +1,22 @@
+.container{
+    width: 100%;
+    background-color: #F0F0F0;
+    height: 1000px;
+    
+    }
+    
+    .maininner{
+        width: 95%;
+
+        height: 300px;
+        margin: auto;
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+    @media screen and (max-width: 940px) {
+    .maininner{
+        width: 100%;
+        flex-direction: column;
+    }
+    }
