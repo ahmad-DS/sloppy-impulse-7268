@@ -3,6 +3,7 @@ import {Routes,Route} from "react-router-dom"
 import Carb from '../CarbComp/Carb'
 import Weigth from '../Components/Weigth'
 import Exercise from '../Exercise/Exercise'
+import Nutrient from '../Nutrient/Nutrient'
 
 const SidebarRoutes = () => {
   return (
@@ -12,7 +13,7 @@ const SidebarRoutes = () => {
     <Route path='/weigth' element={<Weigth></Weigth>}></Route>
     <Route path='/carb' element={<Carb></Carb>}></Route>
     <Route path='/exercise' element={<Exercise></Exercise>}></Route>
-    <Route></Route>
+    <Route path='/nutrient' element={<Nutrient></Nutrient>}></Route>
     <Route path='/cycling' element={<Carb></Carb>}></Route>
 
    </Routes>
