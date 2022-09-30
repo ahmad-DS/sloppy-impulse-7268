@@ -1,0 +1,12 @@
+.container{
+   /* position: absolute;
+     left: -5rem;
+    right: -5rem; */
+    /* height: 60%; */
+    width: 100%; 
+    border-bottom-right-radius: 100rem 5rem;
+    border-bottom-left-radius: 100rem 5rem;
+    /* box-shadow: inset rgb(9 108 46 / 76%) 0 -2.3rem 10.7rem; */
+    /* z-index: 1; */
+    
+}
