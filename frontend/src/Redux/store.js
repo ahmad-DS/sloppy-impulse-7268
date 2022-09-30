@@ -5,4 +5,6 @@ import { reducer as userReducer } from "./userReducer/reducer";
 
 const rootReducer=combineReducers({authReducer,userReducer})
 
-export const store=legacy_createStore(rootReducer,applyMiddleware(thunk))
+ const store=legacy_createStore(rootReducer,applyMiddleware(thunk))
+
+ export default store
