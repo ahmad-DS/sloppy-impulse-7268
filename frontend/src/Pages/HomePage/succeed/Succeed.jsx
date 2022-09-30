@@ -9,7 +9,10 @@ const Succeed = () => {
     <Box
       as="section"
       roundedBottom="100rem 5rem"
-      background="#fff url(./assets/homepage/insightCardsBg.jpg) 0 0 repeat"
+      bgColor= '#f9f5f2'
+      position={'relative'}
+      overflow={'hidden'}
+   
       mb={'-20px'}
       _before={{
         display: 'block',
@@ -17,9 +20,10 @@ const Succeed = () => {
         top: '-50rem',
         height: '4.5rem',
         content: '""',
-        background: '#fff',
+        bgColor: '#f9f5f2',
         borderBottomRightRadius: '100rem 5rem',
         borderBottomLeftRadius: '100rem 5rem',
+        zIndex: '1',
       }}
     >
       <Box p={'4rem 0 1.6rem 0'}>
@@ -53,13 +57,15 @@ const Succeed = () => {
                 >
                   {item.description}
                 </Text>
-               
               </Box>
 
             ))}
           </Grid>
         </Box>
       </Box>
+      <br />
+      <br />
+      <br />
     </Box>
   );
 };
