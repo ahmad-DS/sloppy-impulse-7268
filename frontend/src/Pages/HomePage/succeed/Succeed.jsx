@@ -1,6 +1,6 @@
 import { Box, Heading, Grid, Image, Text, Img } from '@chakra-ui/react';
 import React from 'react';
-import pic1 from "./images/1.png"
+
 import {cards} from "./succeeddata"
 
 console.log(cards)
@@ -53,7 +53,9 @@ const Succeed = () => {
                 >
                   {item.description}
                 </Text>
+               
               </Box>
+
             ))}
           </Grid>
         </Box>
