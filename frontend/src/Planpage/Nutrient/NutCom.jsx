@@ -1,7 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import styles from "../Styles/nutcomp.module.css";
 
 const NutCom = () => {
+ 
   return (
     <div className={styles.container}>
       <div className={styles.innercontainer1}>
