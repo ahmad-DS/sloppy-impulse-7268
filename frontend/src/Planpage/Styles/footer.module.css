@@ -1,0 +1,48 @@
+.footerdiv{
+    width:80%;
+  
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+   
+  }
+  .footerimage{
+    display: flex;
+  }
+  .footercontainer{
+    width:100%;
+  
+     height: auto;
+     margin: auto;
+  }
+  .footercontainer h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color:green;
+    font-size: 16px;
+  
+    font-style: normal;
+  }
+  
+  .imagedivfooter{
+    text-align: center;
+  }
+  .imagedivfooter h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: green;
+    font-size: 20px;
+   
+    font-style: normal;
+  }
+  .footerpara{
+    margin-top: 50px;
+  }
+  .footerpara h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: green;
+    font-size: 14px;
+   
+    font-style: normal;
+  }
