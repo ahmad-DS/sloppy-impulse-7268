@@ -1,14 +1,19 @@
 
 import "./App.css";
 import { Box } from "@chakra-ui/react";
-import UserPage from "./Pages/UserPage";
+
+import UserNavbar from "./Components/UserNavbar";
+import AllRoutes from "./Routes/AllRoutes";
+
+
 
 
 
 function App() {
   return (
     <Box>
-      <UserPage />
+      <UserNavbar />
+      <AllRoutes />
     </Box>
 
 
