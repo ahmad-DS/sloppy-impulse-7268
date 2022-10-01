@@ -8,7 +8,10 @@ import PersonalInfo from "../Modals/PersonalInfo";
 import TargetModal from "../Modals/TargetModal";
 import WeeklyRate from "../Modals/WeeklyRate";
 import FooterPlan from "./FooterPlan";
+import { useSelector } from "react-redux";
 const Rigthbar = () => {
+
+ 
   return (
     <div className={styles.container}>
       <div className={styles.innercontainer}>
