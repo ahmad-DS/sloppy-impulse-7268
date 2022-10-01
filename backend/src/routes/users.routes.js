@@ -5,7 +5,6 @@
 // const userRoute = express.Router();
 // const passport = require('passport');
 
-
 // function isLoggedIn(req, res, next) {
 //   req.user ? next() : res.sendStatus(401);
 // }
@@ -14,17 +13,11 @@
 //   res.send('<a href="/auth/google">Authenticate with Google</a>');
 // });
 
-
-
-
-
-
 // userRoute.get('/auth/google',
 //   passport.authenticate('google', { scope: [ 'email', 'profile' ] }
 // ));
 
-
-// userRoute.get('/auth/google/callback', 
+// userRoute.get('/auth/google/callback',
 //   passport.authenticate('google', { failureRedirect: '/' }),
 //   function(req, res) {
 //     // Successful authentication, redirect home.
@@ -47,9 +40,6 @@
 // userRoute.get('/auth/google/failure', (req, res) => {
 //   res.send('Failed to authenticate..');
 // });
-
-
-
 
 // userRoute.post("/signup", (req, res) => {
 //   let {
@@ -105,6 +95,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 var jwt = require("jsonwebtoken");
+require("dotenv").config();
 
 const userModel = require("../model/user.model");
 const userRoute = express.Router();
@@ -114,6 +105,7 @@ userRoute.post("/signup", (req, res) => {
     current_weight,
     target_weight,
     gender,
+    age,
     date_of_birth,
     height,
     email,
@@ -129,10 +121,11 @@ userRoute.post("/signup", (req, res) => {
         current_weight,
         target_weight,
         gender,
+        age,
         date_of_birth,
         height,
         email,
-        password:hash,
+        password: hash,
       });
       res.send({ msg: "Signup sucessfull", user });
     }
@@ -157,4 +150,4 @@ userRoute.post("/login", async (req, res) => {
   });
 });
 
-module.exports = userRoute
+module.exports = userRoute;
