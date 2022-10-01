@@ -3,6 +3,8 @@ import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react'
 import { Progress } from '@chakra-ui/react'
 import React from 'react'
 import { BsThreeDotsVertical } from "react-icons/bs"
+import x from '../Redux/userReducer/reducer';
+let per=x.totalCalories*100/x.caloriesRequired;
 
 const Dashboard = () => {
 	return (
@@ -56,8 +58,8 @@ const Dashboard = () => {
 								</VStack>
 							</VStack>
 							<VStack border="2px blue solid">
-								<CircularProgress value={59} size='200px' thickness='5px' color="rgb(53, 189, 9)">
-									<CircularProgressLabel>40%</CircularProgressLabel>
+								<CircularProgress value={x.totalCalories} size='200px' thickness='5px' color="rgb(53, 189, 9)">
+									<CircularProgressLabel>{per}</CircularProgressLabel>
 								</CircularProgress>
 							</VStack>
 							<VStack border="1px green solid">
@@ -65,25 +67,25 @@ const Dashboard = () => {
 									<Text color="rgb(176, 176, 176)" fontSize="15px">
 										Breakfast
 									</Text>
-									<Heading color="rgb(55, 146, 180)" fontSize="25px">0</Heading>
+									<Heading color="rgb(55, 146, 180)" fontSize="25px">{x.breakfastCalories}</Heading>
 								</VStack>
 								<VStack>
 									<Text color="rgb(176, 176, 176)" fontSize="15px">
 										Lunch
 									</Text>
-									<Heading color="rgb(55, 146, 180)" fontSize="25px">0</Heading>
+									<Heading color="rgb(55, 146, 180)" fontSize="25px">{x.lunchCalories}</Heading>
 								</VStack>
 								<VStack>
 									<Text color="rgb(176, 176, 176)" fontSize="15px">
 										Dinner
 									</Text>
-									<Heading color="rgb(55, 146, 180)" fontSize="25px">0</Heading>
+									<Heading color="rgb(55, 146, 180)" fontSize="25px">{x.dinnerCalories}</Heading>
 								</VStack>
 								<VStack>
 									<Text color="rgb(176, 176, 176)" fontSize="15px">
 										Snacks
 									</Text>
-									<Heading color="rgb(55, 146, 180)" fontSize="25px">0</Heading>
+									<Heading color="rgb(55, 146, 180)" fontSize="25px">{x.snackCalories}</Heading>
 								</VStack>
 							</VStack>
 						</Flex>
