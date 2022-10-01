@@ -1,0 +1,17 @@
+.container{
+    width: 100%;
+    background-color: #F0F0F0;
+    height: auto;
+
+    
+    }
+    
+    .maininner{
+   
+
+        height: auto;
+        margin: auto;
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+    }

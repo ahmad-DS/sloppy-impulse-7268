@@ -1,0 +1,114 @@
+.container {
+  width: 100%;
+  background-color: white;
+  height: auto;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+.footerdiv{
+  width:80%;
+
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+ 
+}
+.footerimage{
+  display: flex;
+}
+.footercontainer{
+  width:100%;
+
+   height: auto;
+   margin: auto;
+}
+.footercontainer h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color:rgba(1, 3, 4, 0.55);
+  font-size: 16px;
+
+  font-style: normal;
+}
+
+.imagedivfooter{
+  text-align: center;
+}
+.imagedivfooter h3{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: green;
+  font-size: 20px;
+ 
+  font-style: normal;
+}
+.footerpara{
+  margin-top: 50px;
+}
+.footerpara h3{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: green;
+  font-size: 14px;
+ 
+  font-style: normal;
+}
+.innercontainer {
+  width: 98%;
+
+  height: auto;
+  margin: auto;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.innercontainerdiv1{
+  margin-left: 40px;
+}
+.innercontainerdiv1 h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color:rgba(1, 3, 4, 0.55);
+  font-size: 16px;
+
+  font-style: normal;
+}
+.modalh1tag {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: green;
+  font-size: 22px;
+  margin-left: 40px;
+  font-style: normal;
+}
+@media screen and (max-width: 940px) {
+  .container {
+    margin-top: 50px;
+    border: 1px solid red;
+  }
+  .innercontainer {
+    width: 100%;
+ 
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    margin: auto;
+  }
+  .innercontainer {
+    width: 100%;
+
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin: auto;
+  }
+}

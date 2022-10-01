@@ -8,10 +8,12 @@ import Succeed from '../HomePage/succeed/Succeed'
 import StorySlider from '../HomePage/SuccessStory/StorySlider'
 import UpperSection from '../HomePage/uppersection/UpperSection'
 import WomenHelthSection from '../HomePage/womenhealth/WomenHelthSection'
+import HomeNavbar from './HomeNavbar'
 
 const Home = () => {
   return (
     <div>
+      <HomeNavbar/>
       <UpperSection/>
       <WomenHelthSection/>
       <Succeed/>

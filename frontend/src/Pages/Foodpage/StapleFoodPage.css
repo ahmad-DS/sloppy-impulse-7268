@@ -1,0 +1,4 @@
+.staple-food-item:hover {
+  border-bottom: outset rgb(31, 94, 231);
+  cursor: pointer;
+}
