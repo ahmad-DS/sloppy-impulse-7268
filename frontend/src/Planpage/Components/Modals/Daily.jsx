@@ -14,30 +14,63 @@ import {
   useDisclosure,
   Box,
 } from "@chakra-ui/react";
+import { useSelector } from "react-redux";
+import axios from "axios";
 const Daily = () => {
-  const daily_calorie = 2600;
+  const [currentweigth, setCurrentweigth] = React.useState(0);
+  const fitnessCalculatorFunctions = require("fitness-calculator");
+  const dailydata = useSelector((store) => store.Appreducer.data);
 
+  let today = new Date();
+  let year = [];
+  year.push(today.getFullYear());
+
+  let datepattern = year[0];
+
+  React.useEffect(() => {
+    if (dailydata.length > 0) {
+      const { gender, height, current_weight, date_of_birth } = dailydata[0];
+
+      let text = date_of_birth;
+      let yearresult = Math.abs(text.slice(6, text.length) - datepattern);
+
+      let result = gender.toLowerCase();
+
+      const myCalorieNeeds = fitnessCalculatorFunctions.calorieNeeds(
+        result,
+        yearresult,
+        height,
+        current_weight,
+        "sedentary"
+      );
+
+      setCurrentweigth(Math.floor(Number(myCalorieNeeds.mildWeightLoss)));
+    }
+  }, [dailydata]);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
-  const handlechange = () => {
-    console.log("e");
+  const handlechange = (e) => {
+    setCurrentweigth(e.target.value);
   };
   return (
     <>
       <Box onClick={onOpen} width={"30%"} variant="unstyled">
-        <Input
-          type="text"
-          value={daily_calorie}
-          style={{
-            color: "green",
-            fontFamily: "Roboto",
-            fontWeight: 400,
-            fontSize: "22px",
-          }}
-          onChange={handlechange}
-        />
+        {dailydata?.map((e, index) => (
+          <Input
+            type="text"
+            value={currentweigth}
+            style={{
+              color: "green",
+              fontFamily: "Roboto",
+              fontWeight: 400,
+              fontSize: "22px",
+            }}
+            key={index}
+            onChange={handlechange}
+          />
+        ))}
       </Box>
 
       <Modal
@@ -55,7 +88,7 @@ const Daily = () => {
               <FormLabel>Daily Food Calorie Budget</FormLabel>
               <Input
                 ref={initialRef}
-                value={daily_calorie}
+                value={currentweigth}
                 onChange={handlechange}
               />
             </FormControl>

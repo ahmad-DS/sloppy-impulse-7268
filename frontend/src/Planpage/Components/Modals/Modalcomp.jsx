@@ -14,22 +14,34 @@ import {
   Input,
   useDisclosure,
 } from "@chakra-ui/react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { getrequestdata, weigthpatch } from "../../../Redux/Appreducer/action";
+
 const Modalcomp = () => {
+  const data = useSelector((store) => store.Appreducer.data);
+  const dispatch = useDispatch();
+  const [wholedata, setWholedata] = React.useState([]);
+  const [currentweigth, setCurrentweigth] = React.useState(0);
+  const handlechange = () => {
+    console.log("zaki");
+  };
 
-  const data=useSelector(store=>store.Appreducer.data)
+  const handlepatch = () => {
+    const payload = { current_weight: Number(currentweigth) };
+    dispatch(weigthpatch(1, payload)).then((r) => {
+      dispatch(getrequestdata());
+    });
+  };
+  React.useEffect(() => {}, [currentweigth]);
+  const handleclick = () => {};
+  React.useEffect(() => {
+    if (data.length > 0) {
+   
+      setCurrentweigth(data[0].current_weight);
+      setWholedata(data);
+    }
+  }, [data]);
 
-
-const handlechange=()=>{
-console.log("zaki");
-}
-
- 
- 
-React.useEffect(()=>{
-
-
-},[])
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = React.useRef(null);
@@ -38,20 +50,20 @@ React.useEffect(()=>{
   return (
     <>
       <Button onClick={onOpen} variant="unstyled">
-        {data?.map((e)=>(
+        {data?.map((e, index) => (
           <h1
-          style={{
-            color: "green",
-            fontFamily: "Roboto",
-            fontWeight: 400,
-            fontSize: "22px",
-          }}
-        >
-          {Math.floor(e.current_weight*2.2)}
-        </h1>
-
+            style={{
+              color: "green",
+              fontFamily: "Roboto",
+              fontWeight: 400,
+              fontSize: "22px",
+            }}
+            key={index}
+            onClick={handleclick}
+          >
+            {currentweigth}
+          </h1>
         ))}
-        
       </Button>
 
       <Modal
@@ -66,15 +78,16 @@ React.useEffect(()=>{
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
-            {data?.map((e)=>(
-              <Input
-                ref={initialRef}
-                placeholder="Cals"
-                value={e.current_weight}
-                variant="unstyled"
-                onChangeEnd={handlechange}
-              />
-            ))}
+              {data?.map((e, index) => (
+                <Input
+                  key={index}
+                  ref={initialRef}
+                  placeholder="Cals"
+                  value={currentweigth}
+                  variant="unstyled"
+                  onChange={(e) => setCurrentweigth(e.target.value)}
+                />
+              ))}
             </FormControl>
 
             <FormControl mt={4}>
@@ -99,7 +112,7 @@ React.useEffect(()=>{
 
           <ModalFooter>
             <Button onClick={onClose}>Cancel</Button>
-            <Button colorScheme="blue" mr={3}>
+            <Button colorScheme="blue" mr={3} onClick={handlepatch}>
               Save
             </Button>
           </ModalFooter>

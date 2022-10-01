@@ -15,18 +15,18 @@ import {
   Box,
 } from "@chakra-ui/react";
 const DateModal = () => {
- const [date,setDate]=React.useState()
+  const [date, setDate] = React.useState();
   const calculatedate = () => {
     let today = new Date();
-  let year = today.getFullYear();
-  let month = String(today.getMonth()).padStart(2, 0);
-  let date = String(today.getDate()).padStart(2, 0);
- let datepattern = year + "-" + month + "-" + date;
-  setDate(datepattern)
+    let year = today.getFullYear();
+    let month = String(today.getMonth()).padStart(2, 0);
+    let date = String(today.getDate()).padStart(2, 0);
+    let datepattern = year + "-" + month + "-" + date;
+    setDate(datepattern);
   };
-React.useEffect(() => {
-    calculatedate()
-}, [date])
+  React.useEffect(() => {
+    calculatedate();
+  }, [date]);
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const current_weigth = `${136} lbs`;
@@ -49,7 +49,6 @@ React.useEffect(() => {
       >
         <ModalOverlay />
         <ModalContent>
-   
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>

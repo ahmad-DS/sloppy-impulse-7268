@@ -15,7 +15,12 @@ import {
 } from "@chakra-ui/react";
 import { CgProfile } from "react-icons/cg";
 const PersonalInfo = () => {
-  const setValue = {};
+const setValue=()=>{
+
+}
+  const handlechange=()=>{
+
+  }
   return (
     <>
       <Accordion defaultIndex={[0]} allowToggle width={"100%"}>
@@ -35,7 +40,7 @@ const PersonalInfo = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4} width={"50%"}>
-                <Input type="text" />
+                <Input type="text" onChange={handlechange}/>
               </AccordionPanel>
 
               <AccordionPanel pb={4} width={"50%"}>
@@ -51,7 +56,7 @@ const PersonalInfo = () => {
 
               <AccordionPanel pb={4} width={"50%"}>
                 <h1>Date of Birth</h1>
-                <Input type="date" />
+                <Input type="date" onChange={handlechange}/>
               </AccordionPanel>
 
               <AccordionPanel pb={4} width={"50%"}>
@@ -68,7 +73,7 @@ const PersonalInfo = () => {
 
               <AccordionPanel pb={4}>
                 <h1>Body Mass Index</h1>
-                <Input type="number" width={"50%"} />
+                <Input type="number" width={"50%"} onChange={handlechange}/>
                 <h1>
                   BMI is an estimate of body fat and a good measure of risk for
                   diseases that can occur with overweight people. Your BMI is
@@ -78,7 +83,7 @@ const PersonalInfo = () => {
 
               <AccordionPanel pb={4}>
                 <h1> Basal Metabolic Rate (BMR)</h1>
-                <Input type="number" width={"50%"} />
+                <Input type="number" width={"50%"} onChange={handlechange}/>
 
                 <h1>
                   Daily food calories needed to maintain your body weight. To

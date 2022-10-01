@@ -8,10 +8,10 @@ import PersonalInfo from "../Modals/PersonalInfo";
 import TargetModal from "../Modals/TargetModal";
 import WeeklyRate from "../Modals/WeeklyRate";
 import FooterPlan from "./FooterPlan";
-import { useSelector } from "react-redux";
+
 const Rigthbar = () => {
 
- 
+
   return (
     <div className={styles.container}>
       <div className={styles.innercontainer}>
@@ -33,7 +33,7 @@ const Rigthbar = () => {
       <div className={styles.innercontainerdiv1}>
         <h1>Target Date</h1>
 
-        <DateModal />
+        {/* <DateModal /> */}
       </div>
       <div className={styles.innercontainerdiv1}>
         <h1>Change Weekly Rate</h1>
