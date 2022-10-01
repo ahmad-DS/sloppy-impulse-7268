@@ -23,44 +23,18 @@ const UpperSection = () => {
       position={'relative'}
       overflow={'hidden'}
       pb="200px"
-      _before={{
-        position: 'absolute',
-        display: 'block',
-        width: '100%',
-        height: '60%',
-        background:
-          'url(https://s3.amazonaws.com/img.mynetdiary.com/images/texture-noise@1x.png),radial-gradient(ellipse at top,#05b24a 0,#05963d 60%)',
-        borderBottomRightRadius: '100rem 5rem',
-        borderBottomLeftRadius: '100rem 5rem',
-        boxShadow: 'inset rgb(9 108 46 / 76%) 0 -2.3rem 10.7rem',
-        zIndex: '-1',
-        content: '""',
-        overflow: 'hidden',
-      }}
+     
     >
-      <Box p={'10rem 0 2.6rem 0'} width="100%" overflow={'hidden'} m="auto">
+      <Box p={'10rem 0 2.6rem 0'} width="100%" overflow={'hidden'} m="auto" >
         <Box
+        className={styles.box1}
           position={'relative'}
           zIndex="1"
           width="100%"
           m="auto"
           display={'flex'}
           justifyContent={'center'}
-          
-          // _before={[
-           
-          //   {
-          //     position: 'absolute',
-          //     bottom: '-100px',
-          //     left: '-22%',
-          //     width: '45rem',
-          //     height: '40rem',
-          //     border: '1px dashed black',
-          //     rounded: '100%',
-          //     content: '""',
-          //     zIndex: '-1',
-          //   },
-          // ]}
+      
           _after={[
             '',
             '',
@@ -116,7 +90,7 @@ const UpperSection = () => {
                   'center',
                   'flex-start',
                   'flex-start',
-                  'flex-start',
+                  
                 ]}
               >
 
@@ -165,6 +139,7 @@ const UpperSection = () => {
                     'flex-start',
                     'flex-start',
                   ]}
+                  
                 >
                   <Flex
                     gap={1}
@@ -203,6 +178,7 @@ const UpperSection = () => {
                 </Flex>
               </Box>
             </Box>
+            <Box>
             <Image
               src={phone}
               position="absolute"
@@ -217,17 +193,21 @@ const UpperSection = () => {
               bottom={'-80px'}
               width="25%"
             />
+            </Box>
+           
           </Box>
         </Box>
       </Box>
 
-      <Image
+   <Box>
+   <Image
         src={plate}
         position="absolute"
         top={0}
         right="-10"
         width="30rem"
-        height="40rem"
+        height="auto"
+        zIndex={"-1"}
       />
       <Image
         src={cherry}
@@ -236,6 +216,8 @@ const UpperSection = () => {
         left="10"
         maxW="5%"
       />
+   </Box>
+      
     </Box>
   );
 };
