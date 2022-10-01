@@ -47,7 +47,3 @@ function Calendar1() {
   );
 }
 export default Calendar1
-
-{/* <div >
-<Calendar onChange={onChange} value={date} />
-</div> */}
