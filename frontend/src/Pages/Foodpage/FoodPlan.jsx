@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { tableMenu } from "../../Data/tableMenu";
 import FoodForm from "./FoodForm";
 import { BiDotsVerticalRounded } from "react-icons/bi";
@@ -17,6 +17,7 @@ import {
   MenuDivider,
 } from "@chakra-ui/react";
 import FoodTableHeader from "./FoodTableHeader";
+import Apple from "./Apple";
 
 export default function FoodPlan({ display }) {
   const { breakfast, lunch, dinner, snacks } = tableMenu;
@@ -24,25 +25,41 @@ export default function FoodPlan({ display }) {
   const [lunchData, setLunchData] = useState([]);
   const [dinnerData, setDinnerData] = useState([]);
   const [breakfastData, setBreakfastData] = useState([]);
-  const [snachData, setSnacksData] = useState([]);
+  const [snackData, setSnacksData] = useState([]);
 
   const [totalCals, setTotalCals] = useState(0);
 
+  const handleCalories = (arr) => {
+    let total = JSON.parse(localStorage.getItem("totalCalories")) || 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i].cals !== null) {
+        total += arr[i].cals;
+      }
+    }
+    setTotalCals(total);
+    localStorage.setItem("totalCals", total);
+  };
+
+  useEffect(() => {
+    handleCalories([
+      ...lunchData,
+      ...breakfastData,
+      ...dinnerData,
+      ...snackData,
+    ]);
+  }, [lunchData, breakfastData, dinnerData, snackData]);
+
   const handleLunch = (data) => {
     setLunchData([...lunchData, data]);
-    setTotalCals(totalCals + data.cals);
   };
   const handleDinner = (data) => {
     setDinnerData([...dinnerData, data]);
-    setTotalCals(totalCals + data.cals);
   };
   const handleSnacks = (data) => {
-    setSnacksData([...snachData, data]);
-    setTotalCals(totalCals + data.cals);
+    setSnacksData([...snackData, data]);
   };
   const handleBreakfast = (data) => {
     setBreakfastData([...breakfastData, data]);
-    setTotalCals(totalCals + data.cals);
   };
 
   return (
@@ -229,12 +246,21 @@ export default function FoodPlan({ display }) {
           <AccordionPanel pb={4}>
             <FoodForm
               meals={snacks}
-              mealData={snachData}
+              mealData={snackData}
               handleMeals={handleSnacks}
             />
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
+      <div
+        style={{
+          marginTop: "2rem",
+          borderTop: "1px solid gray",
+          padding: "2rem 0",
+        }}
+      >
+        <Apple val={totalCals} />
+      </div>
     </div>
   );
 }

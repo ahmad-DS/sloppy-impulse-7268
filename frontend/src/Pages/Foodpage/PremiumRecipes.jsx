@@ -1,9 +1,10 @@
 import React from "react";
 import RecipeModal from "./RecipeModal";
 import { useState } from "react";
+import { IoIosArrowBack } from "react-icons/io";
 // import { premiumData } from "../../Data/recipies";
 
-const PremiumRecipes = () => {
+const PremiumRecipes = ({ display }) => {
   const [open, setOpen] = useState(false);
   const [modalData, setModalData] = useState({});
   const premiumData = [
@@ -606,69 +607,91 @@ const PremiumRecipes = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr 1fr",
-      }}
-    >
-      {premiumData.map((data, index) => {
-        return (
-          <div key={index} style={{ padding: "1rem", borderRadius: "10px" }}>
-            <button
-              onClick={async () => {
-                handleModal(data.id);
+    <>
+      <div>
+        <button
+          onClick={() => {
+            display();
+          }}
+          style={{ padding: "0.5rem 1rem", color: "blue" }}
+        >
+          <div style={{ display: "flex" }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginRight: "10px",
               }}
             >
-              <div>
-                <div style={{ position: "relative" }}>
-                  <img
-                    style={{ borderRadius: "10px" }}
-                    src={data.imagePreview.imageSrc}
-                    width="100%"
-                    alt=""
-                  />
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: "80%",
-                      left: "0px",
-                      color: "white",
-                      padding: "0 20px",
-                      width: "100%",
-                    }}
-                  >
+              <IoIosArrowBack />
+            </div>
+            <div>Back to meals</div>
+          </div>
+        </button>
+      </div>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr 1fr",
+        }}
+      >
+        {premiumData.map((data, index) => {
+          return (
+            <div key={index} style={{ padding: "1rem", borderRadius: "10px" }}>
+              <button
+                onClick={async () => {
+                  handleModal(data.id);
+                }}
+              >
+                <div>
+                  <div style={{ position: "relative" }}>
+                    <img
+                      style={{ borderRadius: "10px" }}
+                      src={data.imagePreview.imageSrc}
+                      width="100%"
+                      alt=""
+                    />
                     <div
                       style={{
-                        display: "grid",
-                        gridTemplateColumns: "3fr 1fr",
-                        lineHeight: "1.15",
+                        position: "absolute",
+                        top: "80%",
+                        left: "0px",
+                        color: "white",
+                        padding: "0 20px",
+                        width: "100%",
                       }}
                     >
                       <div
                         style={{
-                          textAlign: "left",
-                          display: "flex",
-                          alignItems: "center",
+                          display: "grid",
+                          gridTemplateColumns: "3fr 1fr",
+                          lineHeight: "1.15",
                         }}
                       >
-                        {data.name}
-                      </div>
-                      <div style={{ textAlign: "right" }}>
-                        <div style={{ fontSize: "18px", fontWeight: "bold" }}>
-                          {data.singleServingCalories}
+                        <div
+                          style={{
+                            textAlign: "left",
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                        >
+                          {data.name}
                         </div>
-                        <div>
-                          <div>cals/</div>
-                          <div>serving</div>
+                        <div style={{ textAlign: "right" }}>
+                          <div style={{ fontSize: "18px", fontWeight: "bold" }}>
+                            {data.singleServingCalories}
+                          </div>
+                          <div>
+                            <div>cals/</div>
+                            <div>serving</div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </button>
-            {/* <Modal
+              </button>
+              {/* <Modal
               size="5xl"
               finalFocusRef={finalRef}
               isOpen={isOpen}
@@ -797,13 +820,14 @@ const PremiumRecipes = () => {
                 </ModalFooter>
               </ModalContent>
             </Modal> */}
-            {open && (
-              <RecipeModal data={modalData} open={open} close={handleModal} />
-            )}
-          </div>
-        );
-      })}
-    </div>
+              {open && (
+                <RecipeModal data={modalData} open={open} close={handleModal} />
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 };
 
