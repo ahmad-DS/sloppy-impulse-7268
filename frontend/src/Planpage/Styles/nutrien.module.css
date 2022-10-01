@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  background-color: #f0f0f0;
+  height: auto;
+}
+
+.maininner {
+  height: auto;
+  margin: auto;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
