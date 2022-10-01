@@ -1,6 +1,8 @@
+
 import { Box, Heading, Grid, Image, Text, Img } from "@chakra-ui/react";
 import React from "react";
 import { cards } from "./succeeddata";
+
 
 console.log(cards);
 const Succeed = () => {
@@ -8,17 +10,28 @@ const Succeed = () => {
     <Box
       as="section"
       roundedBottom="100rem 5rem"
+
+      bgColor= '#f9f5f2'
+      position={'relative'}
+      overflow={'hidden'}
+   
+      mb={'-20px'}
+
       background="#fff url(./assets/homepage/insightCardsBg.jpg) 0 0 repeat"
       mb={"-20px"}
+
       _before={{
         display: "block",
         width: "100%",
         top: "-50rem",
         height: "4.5rem",
         content: '""',
-        background: "#fff",
-        borderBottomRightRadius: "100rem 5rem",
-        borderBottomLeftRadius: "100rem 5rem",
+
+        bgColor: '#f9f5f2',
+        borderBottomRightRadius: '100rem 5rem',
+        borderBottomLeftRadius: '100rem 5rem',
+        zIndex: '1',
+
       }}
     >
       <Box p={"4rem 0 1.6rem 0"}>
@@ -58,10 +71,14 @@ const Succeed = () => {
                   {item.description}
                 </Text>
               </Box>
+
             ))}
           </Grid>
         </Box>
       </Box>
+      <br />
+      <br />
+      <br />
     </Box>
   );
 };

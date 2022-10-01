@@ -46,6 +46,21 @@ const UpperSection = () => {
           m="auto"
           display={'flex'}
           justifyContent={'center'}
+          
+          // _before={[
+           
+          //   {
+          //     position: 'absolute',
+          //     bottom: '-100px',
+          //     left: '-22%',
+          //     width: '45rem',
+          //     height: '40rem',
+          //     border: '1px dashed black',
+          //     rounded: '100%',
+          //     content: '""',
+          //     zIndex: '-1',
+          //   },
+          // ]}
           _after={[
             '',
             '',

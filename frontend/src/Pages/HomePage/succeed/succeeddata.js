@@ -1,3 +1,4 @@
+
 import pic1 from "./images/1.png";
 import pic2 from "./images/2.png";
 import pic3 from "./images/3.png";
@@ -32,3 +33,4 @@ export const cards = {
     },
   ],
 };
+
