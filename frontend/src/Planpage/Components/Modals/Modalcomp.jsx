@@ -14,9 +14,22 @@ import {
   Input,
   useDisclosure,
 } from "@chakra-ui/react";
+import { useSelector } from "react-redux";
 const Modalcomp = () => {
-  const calvalue = 2370;
 
+  const data=useSelector(store=>store.Appreducer.data)
+
+
+const handlechange=()=>{
+console.log("zaki");
+}
+
+ 
+ 
+React.useEffect(()=>{
+
+
+},[])
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = React.useRef(null);
@@ -25,7 +38,8 @@ const Modalcomp = () => {
   return (
     <>
       <Button onClick={onOpen} variant="unstyled">
-        <h1
+        {data?.map((e)=>(
+          <h1
           style={{
             color: "green",
             fontFamily: "Roboto",
@@ -33,8 +47,11 @@ const Modalcomp = () => {
             fontSize: "22px",
           }}
         >
-          {calvalue}
+          {Math.floor(e.current_weight*2.2)}
         </h1>
+
+        ))}
+        
       </Button>
 
       <Modal
@@ -49,12 +66,15 @@ const Modalcomp = () => {
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
+            {data?.map((e)=>(
               <Input
                 ref={initialRef}
                 placeholder="Cals"
-                value={calvalue}
+                value={e.current_weight}
                 variant="unstyled"
+                onChangeEnd={handlechange}
               />
+            ))}
             </FormControl>
 
             <FormControl mt={4}>

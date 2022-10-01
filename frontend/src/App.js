@@ -1,5 +1,4 @@
 
-
 import "./App.css";
 import { Box } from "@chakra-ui/react";
 
@@ -13,7 +12,7 @@ import AllRoutes from "./Routes/AllRoutes";
 
 
 
-
+import SidebarRoutes from "./Planpage/Routes/SidebarRoutes";
 
 
 
@@ -23,10 +22,15 @@ function App() {
 
     <Box>
 
+      <SidebarRoutes />
+
+
+
       <UserNavbar />
       <AllRoutes />
 
     </Box>
+
 
   );
 }
