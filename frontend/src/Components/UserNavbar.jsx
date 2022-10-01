@@ -4,10 +4,10 @@ import React from "react";
 //https://s3.amazonaws.com/img.mynetdiary.com/left.png
 //https://s3.amazonaws.com/img.mynetdiary.com/right.png
 //https://www.mynetdiary.com/img/Premium_planning_x2.png
-
 import { Box, Flex, HStack, Spacer } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import Calendar1 from "./Calendar1";
 const links = [
   {
     to: "/dashboard",
@@ -53,13 +53,13 @@ const UserNavbar = () => {
   return (
     <Flex direction="column" backgroundColor={"green"}>
       <Flex>
-        <HStack>
-          <Image src="https://s3.amazonaws.com/img.mynetdiary.com/logo_react.png" />
-          <HStack>
-            <Image src="https://www.mynetdiary.com/img/icon/date_range.png" />
-            <Image src="https://s3.amazonaws.com/img.mynetdiary.com/left.png" />
-            <Image src="https://s3.amazonaws.com/img.mynetdiary.com/right.png" />
-          </HStack>
+        <HStack spacing={20}>
+          <Image
+            h="60px"
+            src="https://s3.amazonaws.com/img.mynetdiary.com/logo_react.png"
+          />
+          {/* calendar component */}
+          <Calendar1 />
         </HStack>
         <Spacer />
 

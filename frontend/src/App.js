@@ -1,8 +1,11 @@
+
 import "./App.css";
 import { Box } from "@chakra-ui/react";
 
 import UserNavbar from "./Components/UserNavbar";
 import AllRoutes from "./Routes/AllRoutes";
+
+
 
 function App() {
   return (
@@ -10,6 +13,8 @@ function App() {
       <UserNavbar />
       <AllRoutes />
     </Box>
+
+
   );
 }
 
