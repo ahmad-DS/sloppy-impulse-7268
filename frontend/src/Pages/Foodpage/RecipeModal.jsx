@@ -12,7 +12,6 @@ import {
 import React from "react";
 
 const RecipeModal = ({ data, open, close }) => {
-  console.log(data);
   const { onClose } = useDisclosure();
   const finalRef = React.useRef(null);
   return (

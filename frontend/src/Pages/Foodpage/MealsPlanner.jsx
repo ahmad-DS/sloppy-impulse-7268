@@ -43,30 +43,9 @@ const MealsPlanner = ({ display }) => {
         />
       </div>
       <div style={{ backgroundColor: "#fff", width: "100%" }}>
-        <div>
-          <button
-            onClick={() => {
-              display();
-            }}
-            style={{ padding: "0.5rem 1rem", color: "blue" }}
-          >
-            <div style={{ display: "flex" }}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  marginRight: "10px",
-                }}
-              >
-                <IoIosArrowBack />
-              </div>
-              <div>Back to meals</div>
-            </div>
-          </button>
-        </div>
-        {search && <SearchPage />}
-        {staple && <StapleFoodPage />}
-        {premium && <PremiumRecipes />}
+        {search && <SearchPage display={display} />}
+        {staple && <StapleFoodPage display={display} />}
+        {premium && <PremiumRecipes display={display} />}
       </div>
     </div>
   );
