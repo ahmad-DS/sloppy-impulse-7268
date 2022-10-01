@@ -1,12 +1,42 @@
-.container{
-   /* position: absolute;
+.container {
+  /* position: absolute;
      left: -5rem;
     right: -5rem; */
-    /* height: 60%; */
-    width: 100%; 
-    border-bottom-right-radius: 100rem 5rem;
-    border-bottom-left-radius: 100rem 5rem;
-    /* box-shadow: inset rgb(9 108 46 / 76%) 0 -2.3rem 10.7rem; */
-    /* z-index: 1; */
-    
+  /* height: 60%; */
+  width: 100%;
+  border-bottom-right-radius: 100rem 5rem;
+  border-bottom-left-radius: 100rem 5rem;
+
 }
+
+.container::before {
+  position: absolute;
+  display: block;
+  left: -5rem;
+  right: -5rem;
+  height: 60%;
+  background: #4ea403;
+  background: #05963d url(https://s3.amazonaws.com/img.mynetdiary.com/images/texture-noise@1x.png) 0 0 repeat;
+  background: url(https://s3.amazonaws.com/img.mynetdiary.com/images/texture-noise@1x.png), radial-gradient(ellipse at top, #05b24a 0, #05963d 60%);
+  overflow: hidden;
+  border-bottom-right-radius: 100rem 5rem;
+  border-bottom-left-radius: 100rem 5rem;
+  box-shadow: inset rgb(9 108 46 / 76%) 0 -2.3rem 10.7rem;
+  z-index: -1;
+  content: '';
+  
+}
+
+/* .box1::before {
+    
+    position: absolute;
+      bottom: -100px;
+      left: -20%;
+      width: 45rem;
+      height: 40rem;
+      border: 1px dashed rgba(5,96,0,.6);
+      content: "";
+      z-Index: 1;
+      border-radius: 50%;
+} */
+

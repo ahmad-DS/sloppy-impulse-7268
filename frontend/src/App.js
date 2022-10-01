@@ -22,13 +22,13 @@ import HomeNavbar from "./Pages/Home/HomeNavbar";
 function App() {
   return (
 
+
     <Box>
       
        {/* <Home/> */}
        <AllRoutes/>
 
     </Box>
-
 
   );
 }
