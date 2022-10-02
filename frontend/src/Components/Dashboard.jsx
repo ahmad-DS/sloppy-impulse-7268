@@ -12,10 +12,75 @@ import {
 } from "@chakra-ui/react";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 import { Progress } from "@chakra-ui/react";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import fitnessCalculatorFunctions from "fitness-calculator";
 
 const Dashboard = () => {
+  const data = JSON.parse(localStorage.getItem("logindata"));
+
+  const age = data.age;
+  const cweight = data.current_weight;
+  const tweight = data.target_weight;
+  const height = data.height;
+  const gender = data.gender;
+
+  const [calsRequired, setCalsRequired] = useState(0);
+
+  useEffect(() => {
+    let temp = cweight - tweight;
+    let macros;
+    let calsNeed = fitnessCalculatorFunctions.calorieNeeds(
+      gender,
+      age,
+      height,
+      cweight,
+      "sedentary"
+    );
+    if (temp < 0) {
+      macros = fitnessCalculatorFunctions.macros(
+        gender,
+        age,
+        height,
+        cweight,
+        "sedentary",
+        "mildWeightLoss"
+      );
+      setCalsRequired(calsNeed.mildWeightGain);
+      localStorage.setItem(
+        "macros",
+        JSON.stringify({ carb: 45, protein: 25, fat: 30 })
+      );
+    } else if (temp > 0) {
+      macros = fitnessCalculatorFunctions.macros(
+        gender,
+        age,
+        height,
+        cweight,
+        "sedentary",
+        "mildWeightGain"
+      );
+      setCalsRequired(calsNeed.mildWeightLoss);
+      localStorage.setItem(
+        "macros",
+        JSON.stringify({ carb: 40, protein: 25, fat: 25 })
+      );
+    } else {
+      macros = fitnessCalculatorFunctions.macros(
+        gender,
+        age,
+        height,
+        cweight,
+        "sedentary",
+        "balance"
+      );
+      setCalsRequired(calsNeed.balance);
+      localStorage.setItem(
+        "macros",
+        JSON.stringify({ carb: 40, protein: 30, fat: 30 })
+      );
+    }
+  }, []);
   let per = Math.floor(
     ((+localStorage.getItem("totalCalories") || 0) /
       +localStorage.getItem("calsRequired") || 0) * 100
@@ -32,7 +97,7 @@ const Dashboard = () => {
                   Calorie Budget
                 </Text>
                 <Heading color="rgb(55, 146, 180)" fontSize="25px">
-                  {Math.floor(+localStorage.getItem("calsRequired")) || 0} cals
+                  {Math.floor(calsRequired) || 0} cals
                 </Heading>
               </VStack>
               <Spacer />
@@ -98,7 +163,7 @@ const Dashboard = () => {
                       </div>
                       <div style={{ color: "gray", fontSize: "20px" }}>
                         {Math.floor(
-                          (+localStorage.getItem("calsRequired") || 0) -
+                          (calsRequired || 0) -
                             (+localStorage.getItem("totalCalories") || 0)
                         )}
                       </div>

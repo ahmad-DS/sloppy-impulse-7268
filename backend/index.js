@@ -1,14 +1,14 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const passport = require("./google auth/auth");
-const userRoute = require("./routes/users.routes");
-var cors = require('cors')
+const passport = require("./src/google auth/auth");
+const userRoute = require("./src/routes/users.routes");
+var cors = require("cors");
 require("dotenv").config();
 
 const app = express();
 app.use(express.json());
- 
-app.use(cors())
+
+app.use(cors());
 
 app.get("/dashbord", (req, res) => {
   res.send("dashbord");
