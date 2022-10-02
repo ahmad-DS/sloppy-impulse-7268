@@ -6,6 +6,10 @@ import Food from "../Pages/Foodpage/Food";
 import Home from "../Pages/Home/Home";
 import Succeed from "../Pages/HomePage/succeed/Succeed";
 import UserPage from "../Pages/UserPage";
+import Sidebar from "../Planpage/Components/Sidebar";
+import Weigth from "../Planpage/Components/Weigth";
+import Exercise from "../Planpage/Exercise/Exercise";
+import SidebarRoutes from "../Planpage/Routes/SidebarRoutes";
 
 const AllRoutes = () => {
   return (
@@ -14,8 +18,9 @@ const AllRoutes = () => {
       <Route path="/login" element={<Login/>} />
       <Route path="/" element={<Home />} />
       <Route path="/user" element={<UserPage />} />
-      <Route path="/user/plan" element={<Food />} />
+      <Route path="/user/plan" element={<Weigth />} />
       <Route path="/user/food" element={<Food />} />
+      <Route path="/user/exercise" element={<Exercise />} />
       <Route path="/user/succeed" element={<Succeed />} />
       {/* <Route path="/user" element={<UserPage />} /> */}
     </Routes>

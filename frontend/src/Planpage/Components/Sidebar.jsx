@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className={styles.sidecontainer}>
-      <Link to="/plan/weigth">
+      <Link to="/user/plan/weigth">
         <div className={styles.div1}>
           <div className={styles.logo}>
             <img
@@ -18,7 +18,7 @@ const Sidebar = () => {
           </div>
         </div>
       </Link>
-      <Link to="/plan/carb">
+      <Link to="/user/plan/carbs">
         <div className={styles.div1}>
           <div className={styles.logo}>
             <img
@@ -31,7 +31,7 @@ const Sidebar = () => {
           </div>
         </div>
       </Link>
-      <Link to="/plan/exercise">
+      <Link to="/user/plan/exercise">
         <div className={styles.div1}>
           <div className={styles.logo}>
             <img
@@ -44,7 +44,7 @@ const Sidebar = () => {
           </div>
         </div>
       </Link>
-      <Link to="/plan/nutrient">
+      <Link to="/user/plan/nutrient">
         <div className={styles.div1}>
           <div className={styles.logo}>
             <img
@@ -74,7 +74,7 @@ const Sidebar = () => {
           </div>
         </div>
       </Link>
-      <Link to="/plan/Cycling">
+      <Link to="/user/plan/Cycling">
         <div className={styles.div1}>
           <div className={styles.logo}>
             <img
