@@ -1,6 +1,5 @@
-import React,{useState} from 'react';
-import {  Box,
-  Heading,
+import {
+  Box,
   Button,
   Flex,
   ListItem,
@@ -11,22 +10,13 @@ import {  Box,
   MenuButton,
   Text,
   Icon,
-  Image, } from '@chakra-ui/react';
-import phone from './images/phone.png'
-import watch from './images/watch.png'
-import cherry from './images/left.png';
-import plate from './images/right.png'
-import apple from './images/apple.png'
-import android from './images/android.png'
-import fullStar from './images/fullStar.png'
-import halfStar from './images/halfStar.png'
-import applestore from './images/store/appleStore.svg'
-import playStore from './images/store/playStore.svg'
-import styles from './uppersection.module.css'
-import homeLogo from '../Navbar/images/logo-dark.svg';
-import { Link, useNavigate } from 'react-router-dom';
-import {NAV_ITEMS} from '../Navbar/Navbardata'
+  Image,
+} from '@chakra-ui/react';
+import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import homeLogo from './images/logo-dark.svg';
+import { Link, useNavigate } from 'react-router-dom';
+import {NAV_ITEMS} from './Navbardata'
 const CircleIcon = props => (
   <Icon viewBox="0 0 200 200" {...props}>
     <path
@@ -35,29 +25,18 @@ const CircleIcon = props => (
     />
   </Icon>
 );
-
-
-const UpperSection = () => {
+const Navbar = () => {
   const navigate = useNavigate();
+
   return (
-    <>
-     <Box
-      className={styles.container}
-      as="section"
-      width={'100%'}
-      position={'relative'}
-      overflow={'hidden'}
-      pb="200px"
-     
-    >
-     <Box
+    <Box
       as="nav"
-      bgColor={"white"}
       position={'fixed'}
-      top="0px"
+      top="0"
       w="100%"
       zIndex={100000}
       p="0 10px"
+      background="white"
     >
       <Flex maxW={'1470px'} m="auto" p="5px 15px">
         
@@ -257,213 +236,8 @@ const UpperSection = () => {
           </Flex>
         </Flex>
       </Flex>
-
-      {/* uppersection  */}
     </Box>
-   
-      <Box p={'10rem 0 2.6rem 0'} width="100%" overflow={'hidden'} m="auto" >
-        <Box
-        className={styles.box1}
-          position={'relative'}
-          zIndex="1"
-          width="100%"
-          m="auto"
-          display={'flex'}
-          justifyContent={'center'}
-      
-          _after={[
-            '',
-            '',
-            '',
-            {
-              position: 'absolute',
-              top: '-700px',
-              left: '20%',
-              width: '50rem',
-              height: '50rem',
-              border: '1px dashed rgba(5,96,0,.6)',
-              rounded: '100%',
-              content: '""',
-              zIndex: '-1',
-            },
-          ]}
-        >
-          <Box
-            p="0 15px 0 15px"
-            width={'100%'}
-            maxW={'1470px'}
-            textAlign={['center', 'center', 'left', 'left', 'left']}
-            ml={['0', '0', '1%', '5%']}
-            position="relative"
-            pb="150px"
-          >
-            <Box width="50%">
-              <Heading
-                color={'white'}
-                as={'h1'}
-                fontSize={['3rem', '3rem', '3.2rem', '4rem', '5rem']}
-                fontWeight={500}
-                mb={['1rem', '1rem', '1rem', '1rem']}
-              >
-                Be Healthy
-                <br />
-                for Life!
-              </Heading>
-              <Text
-                fontWeight={500}
-                fontSize={['14px', '20px', '22px', '26px']}
-                mb={['15px', '15px', '15px', '']}
-                color="#fcf8b3"
-              >
-                Your weight loss, diet, and <br />
-                nutrition assistant.
-              </Text>
-              <Flex
-                gap={[2, 2, 2, 4]}
-                pb="80px"
-                justifyContent={[
-                  'center',
-                  'center',
-                  'flex-start',
-                  'flex-start',
-                  
-                ]}
-              >
-
-                <Box as="a" target="_blank">
-                  <Image
-                    src={applestore}
-                    width={['134px', '134px', '140px', '150px']}
-                  />
-                </Box>
-                <Box as="a" target="_blank">
-                  <Image
-                    src={playStore}
-                    width={['134px', '134px', '140px', '150px']}
-                  />
-                </Box>
-
-              </Flex>
-            </Box>
-
-            <Box position={'absolute'} bottom="10">
-              <Box>
-                <Text
-                  as="strong"
-                  color="#46618a"
-                  fontWeight={700}
-                  fontSize={['1.2rem', '1.5rem', '1.8rem', '1.8rem']}
-                >
-                  Top Rated:
-                </Text>
-                <Text
-                  as="span"
-                  color="#46618a"
-                  fontSize={['1.2rem', '1.5rem', '1.6rem', '1.6rem']}
-                >
-                  {' 61,383 reviews & counting'}
-                </Text>
-              </Box>
-              <Box mt="10px">
-                <Flex
-                  gap={4}
-                  alignItems={'center'}
-                  justifyContent={[
-                    'center',
-                    'center',
-                    'flex-start',
-                    'flex-start',
-                    'flex-start',
-                  ]}
-                  
-                >
-                  <Flex
-                    gap={1}
-                    alignItems={'center'}
-                    pr="10px"
-                    borderRight="1px dashed #46618a"
-                  >
-                    <Image src={apple} h="22" />
-                    <Image src={fullStar} h="22" />
-                    <Image src={fullStar} h="22" />
-                    <Image src={fullStar} h="22" />
-                    <Image src={fullStar} h="22" />
-                    <Image src={halfStar} h="22" />
-                    <Image src='' />
-                    <Text
-                      color="#46618a"
-                      fontSize={['1.2rem', '1.5rem', '1.6rem', '1.8rem']}
-                    >
-                      4.8
-                    </Text>
-                  </Flex>
-                  <Flex gap={1} alignItems={'center'}>
-                    <Image src={android} h="22" />
-                    <Image src={fullStar} h="22" />
-                    <Image src={fullStar} h="22" />
-                    <Image src={fullStar} h="22" />
-                    <Image src={fullStar} h="22" />
-                    <Image src={halfStar} h="22" />
-                    <Text
-                      color="#46618a"
-                      fontSize={['1.2rem', '1.5rem', '1.6rem', '1.8rem']}
-                    >
-                      4.6
-                    </Text>
-                  </Flex>
-                </Flex>
-              </Box>
-            </Box>
-            <Box>
-           
-            </Box>
-           
-          </Box>
-          
-        </Box>
-        <Image
-             className={styles.image}
-              src={phone}
-              position="absolute"
-              left="30%"
-              bottom="25px"
-              width="32%"
-              zIndex={1}
-            />
-            <Image
-            className={styles.image}
-              src={watch}
-              position="absolute"
-              left="57%"
-              bottom={'27px'}
-              width="25%"
-            />
-      </Box>
-
-   <Box>
-   <Image
-        src={plate}
-        position="absolute"
-        top={0}
-        right="-10"
-        width="30rem"
-        height="auto"
-        zIndex={"-1"}
-      />
-      <Image
-        src={cherry}
-        position="absolute"
-        top={100}
-        left="10"
-        maxW="5%"
-      />
-   </Box>
-      
-    </Box>
-    <br />
-    <br />
-    </>
   );
 };
 
-export default UpperSection;
+export default Navbar;
