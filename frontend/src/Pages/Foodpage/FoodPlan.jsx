@@ -31,10 +31,18 @@ export default function FoodPlan({ display }) {
   const height = +localStorage.getItem("height");
   const gender = localStorage.getItem("gender");
 
-  const [lunchData, setLunchData] = useState([]);
-  const [dinnerData, setDinnerData] = useState([]);
-  const [breakfastData, setBreakfastData] = useState([]);
-  const [snackData, setSnacksData] = useState([]);
+  const [lunchData, setLunchData] = useState(
+    JSON.parse(localStorage.getItem("lunch")) || []
+  );
+  const [dinnerData, setDinnerData] = useState(
+    JSON.parse(localStorage.getItem("dinner")) || []
+  );
+  const [breakfastData, setBreakfastData] = useState(
+    JSON.parse(localStorage.getItem("breakfast")) || []
+  );
+  const [snackData, setSnacksData] = useState(
+    JSON.parse(localStorage.getItem("snack")) || []
+  );
 
   const [totalCals, setTotalCals] = useState(0);
 
@@ -153,6 +161,10 @@ export default function FoodPlan({ display }) {
       ...dinnerData,
       ...snackData,
     ]);
+    localStorage.setItem("breakfast", JSON.stringify(breakfastData));
+    localStorage.setItem("lunch", JSON.stringify(lunchData));
+    localStorage.setItem("dinner", JSON.stringify(dinnerData));
+    localStorage.setItem("snack", JSON.stringify(snackData));
   }, [lunchData, breakfastData, dinnerData, snackData]);
 
   useEffect(() => {
@@ -413,19 +425,19 @@ export default function FoodPlan({ display }) {
         <div style={{ display: "flex", alignItems: "center" }}>
           <div style={{ width: "300px" }}>
             <div>
-              <span>carb</span>
+              <span>carb {plan.carb}%</span>
               <span>
                 <Progress colorScheme="green" size="md" value={plan.carb} />
               </span>
             </div>
             <div style={{ margin: "2rem 0" }}>
-              <span>protein</span>
+              <span>protein {plan.protein}%</span>
               <span>
                 <Progress colorScheme="green" size="md" value={plan.protein} />
               </span>
             </div>
             <div>
-              <span>fat</span>
+              <span>fat {plan.fat}%</span>
               <span>
                 <Progress colorScheme="green" size="md" value={plan.fat} />
               </span>
