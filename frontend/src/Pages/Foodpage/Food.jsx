@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import UserNavbar from "../../Components/UserNavbar";
 import FoodPlan from "./FoodPlan";
 import MealsPlanner from "./MealsPlanner";
 
@@ -10,6 +11,7 @@ const Food = () => {
   };
   return (
     <div>
+      <UserNavbar />
       {display ? (
         <FoodPlan display={handleDisplay} />
       ) : (
