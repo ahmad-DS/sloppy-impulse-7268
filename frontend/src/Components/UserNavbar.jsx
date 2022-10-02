@@ -5,17 +5,7 @@ import React from "react";
 //https://s3.amazonaws.com/img.mynetdiary.com/right.png
 //https://www.mynetdiary.com/img/Premium_planning_x2.png
 
-import {
-	Modal,
-	ModalOverlay,
-	ModalContent,
-	ModalHeader,
-	ModalFooter,
-	ModalBody,
-	ModalCloseButton,
-	Button,
-	useDisclosure,
-} from '@chakra-ui/react'
+
 
 import { Box, Flex, Heading, HStack, Spacer, Text } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/react'
@@ -63,7 +53,7 @@ const activeStyle = {
 };
 
 const UserNavbar = () => {
-	const { isOpen, onOpen, onClose } = useDisclosure()
+	
 	return (
 		<Flex direction="column" backgroundColor={"green"}>
 			<Flex>
