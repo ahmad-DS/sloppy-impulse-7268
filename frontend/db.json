@@ -2,13 +2,14 @@
   "data": [
     {
       "id": 1,
-      "current_weight": 70,
-      "target_weight": 50,
+      "current_weight": 78,
+      "target_weight": 86,
       "gender": "Male",
       "date_of_birth": "03/12/1994",
       "email": "zaki7875@gamil.com",
       "password": "",
-      "height": 156
+      "height": 156,
+      "calories": "1860"
     }
   ]
 }

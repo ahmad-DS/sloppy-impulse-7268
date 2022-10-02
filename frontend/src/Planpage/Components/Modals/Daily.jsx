@@ -14,9 +14,11 @@ import {
   useDisclosure,
   Box,
 } from "@chakra-ui/react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
+import { getrequestdata, weigthpatch } from "../../../Redux/Appreducer/action";
 const Daily = () => {
+  const dispatch = useDispatch();
   const [currentweigth, setCurrentweigth] = React.useState(0);
   const fitnessCalculatorFunctions = require("fitness-calculator");
   const dailydata = useSelector((store) => store.Appreducer.data);
@@ -45,8 +47,18 @@ const Daily = () => {
       );
 
       setCurrentweigth(Math.floor(Number(myCalorieNeeds.mildWeightLoss)));
+      localStorage.setItem(
+        "cal",
+        Math.floor(Number(myCalorieNeeds.mildWeightLoss))
+      );
     }
   }, [dailydata]);
+
+  React.useEffect(() => {
+    let results = localStorage.getItem("cal");
+    const payload = { calories: results };
+    dispatch(weigthpatch(1, payload)).then((r) => getrequestdata());
+  }, [currentweigth]);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = React.useRef(null);
@@ -57,20 +69,17 @@ const Daily = () => {
   return (
     <>
       <Box onClick={onOpen} width={"30%"} variant="unstyled">
-        {dailydata?.map((e, index) => (
-          <Input
-            type="text"
-            value={currentweigth}
-            style={{
-              color: "green",
-              fontFamily: "Roboto",
-              fontWeight: 400,
-              fontSize: "22px",
-            }}
-            key={index}
-            onChange={handlechange}
-          />
-        ))}
+        <Input
+          type="text"
+          value={currentweigth}
+          style={{
+            color: "green",
+            fontFamily: "Roboto",
+            fontWeight: 400,
+            fontSize: "22px",
+          }}
+          onChange={handlechange}
+        />
       </Box>
 
       <Modal
