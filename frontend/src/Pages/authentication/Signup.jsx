@@ -17,7 +17,7 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:8080/user/signup", {
+    fetch("https://stormy-harbor-09503.herokuapp.com/user/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -29,11 +29,6 @@ const Signup = () => {
         console.log(data);
 
         alert("signup sucessfull");
-        localStorage.setItem("current_weight", data.user.current_weight);
-        localStorage.setItem("target_weight", data.user.target_weight);
-        localStorage.setItem("gender", data.user.gender);
-        localStorage.setItem("height", data.user.height);
-        localStorage.setItem("age", data.user.age);
         navigate("/login");
       })
       .catch((error) => {
@@ -42,7 +37,7 @@ const Signup = () => {
       });
   };
 
-  const url = "http://localhost:8080/auth/google";
+  const url = "https://stormy-harbor-09503.herokuapp.com/auth/google";
 
   return (
     <>
@@ -166,7 +161,7 @@ export default Signup;
 //     });
 //     // console.log(form);
 //     if (form !== {}) {
-//       fetch('http://localhost:8080/user/signup', {
+//       fetch('https://stormy-harbor-09503.herokuapp.com/user/signup', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -183,7 +178,7 @@ export default Signup;
 
 //   const handlesubmit = (e) => {
 //         e.preventDefault();
-//         fetch("http://localhost:8080/user/signup", {
+//         fetch("https://stormy-harbor-09503.herokuapp.com/user/signup", {
 //           method: "POST",
 //           headers: {
 //             "Content-Type": "application/json",
@@ -727,7 +722,7 @@ export default Signup;
 //       [e.target.name]: e.target.value,
 //     });
 //   };
-//   const url = "http://localhost:8080/auth/google";
+//   const url = "https://stormy-harbor-09503.herokuapp.com/auth/google";
 
 //   const handlePev = () => {
 //     setSelectedStage(selectedStage - 1);

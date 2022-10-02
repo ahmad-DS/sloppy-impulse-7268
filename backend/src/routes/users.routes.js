@@ -100,6 +100,10 @@ require("dotenv").config();
 const userModel = require("../model/user.model");
 const userRoute = express.Router();
 
+userRoute.get("/", (req, res) => {
+  res.send("home route");
+});
+
 userRoute.post("/signup", (req, res) => {
   let {
     current_weight,
@@ -143,7 +147,17 @@ userRoute.post("/login", async (req, res) => {
         { email: email, userId: user._id },
         process.env.SECRET_KEY
       );
-      res.json({ msg: "login sucessfull", token: token, userId: user._id });
+      console.log(user);
+      res.json({
+        msg: "login sucessfull",
+        token: token,
+        userId: user._id,
+        current_weight: user.current_weight,
+        target_weight: user.target_weight,
+        gender: user.gender,
+        age: user.age,
+        height: user.height,
+      });
     } else {
       res.send("invalid credencial");
     }

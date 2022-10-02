@@ -25,11 +25,13 @@ import fitnessCalculatorFunctions from "fitness-calculator";
 export default function FoodPlan({ display }) {
   const { breakfast, lunch, dinner, snacks } = tableMenu;
 
-  const age = +localStorage.getItem("age");
-  const cweight = +localStorage.getItem("current_weight");
-  const tweight = +localStorage.getItem("target_weight");
-  const height = +localStorage.getItem("height");
-  const gender = localStorage.getItem("gender");
+  const data = JSON.parse(localStorage.getItem("logindata"));
+
+  const age = data.age;
+  const cweight = data.current_weight;
+  const tweight = data.target_weight;
+  const height = data.height;
+  const gender = data.gender;
 
   const [lunchData, setLunchData] = useState(
     JSON.parse(localStorage.getItem("lunch")) || []

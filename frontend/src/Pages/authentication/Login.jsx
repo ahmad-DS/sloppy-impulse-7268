@@ -16,7 +16,6 @@ import {
 import "./signup.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
 const Login = () => {
   const [input, setInput] = useState("");
@@ -29,7 +28,7 @@ const Login = () => {
       email: input,
       password: pass,
     };
-    fetch("http://localhost:8080/user/login", {
+    fetch("https://stormy-harbor-09503.herokuapp.com/user/login", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -43,7 +42,7 @@ const Login = () => {
       });
   };
 
-  // fetch("http://localhost:8080/user/login", {
+  // fetch("https://stormy-harbor-09503.herokuapp.com/user/login", {
   //   method: "POST",
   //   headers: {
   //     "Content-Type": "application/json",
@@ -69,7 +68,7 @@ const Login = () => {
   // });
   // };
 
-  const url = "http://localhost:8080/auth/google";
+  const url = "https://stormy-harbor-09503.herokuapp.com/auth/google";
   return (
     <>
       <Box className="main">
