@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../Styles/Carbpage.module.css";
 import {
   Button,
@@ -6,71 +6,56 @@ import {
   SliderFilledTrack,
   SliderThumb,
   SliderTrack,
+  Progress,
 } from "@chakra-ui/react";
 import FooterPlan from "../Components/PlanComp/FooterPlan";
 import Footer from "./Footer";
 
 const Carbpage = () => {
+  const [macros, setMacros] = useState({ carb: 0, protein: 0, fat: 0 });
+  useEffect(() => {
+    setMacros(JSON.parse(localStorage.getItem("macros")));
+  }, []);
   return (
     <div className={styles.container}>
       <div className={styles.maininner}>
         <div className={styles.individiv}>
           <h1>
-            My macronutrient targets are providing <span> 2,370 cals </span> per
+            My macronutrient targets are providing{" "}
+            <span> {localStorage.getItem("calsRequired") || 0} cals </span> per
             day:
           </h1>
           <Button backgroundColor={"white"} ml={"10px"}>
-            Carbs 45%
+            Carbs {macros.carb}%
           </Button>
           <Button backgroundColor={"white"} ml={"10px"}>
-            Protein 20%
+            Protein {macros.protein}%
           </Button>
           <Button backgroundColor={"white"} ml={"10px"}>
-            Fat 35%
+            Fat {macros.fat}%
           </Button>
         </div>
 
         <div className={styles.progress}>
           <Button backgroundColor={"white"} ml={"10px"}>
-            Carbs 45%
+            Carbs {macros.carb}%
           </Button>
-          <Slider aria-label="slider-ex-2" colorScheme="blue" defaultValue={45}>
-            <SliderTrack>
-              <SliderFilledTrack />
-            </SliderTrack>
-            <SliderThumb />
-          </Slider>
+          <Progress value={macros.carb} />
         </div>
         <div className={styles.progress}>
           <Button backgroundColor={"white"} ml={"10px"}>
-            Protein 20%
+            Protein {macros.protein}%
           </Button>
-          <Slider aria-label="slider-ex-2" colorScheme="blue" defaultValue={20}>
-            <SliderTrack>
-              <SliderFilledTrack />
-            </SliderTrack>
-            <SliderThumb />
-          </Slider>
+          <Progress value={macros.protein} />
         </div>
         <div className={styles.progress}>
           <Button backgroundColor={"white"} ml={"10px"}>
-            Fat 35%
+            Fat {macros.fat}%
           </Button>
-          <Slider
-            aria-label="slider-ex-2"
-            colorScheme="blue"
-            defaultValue={35}
-            onChangeEnd={(val) => console.log(val)}
-          >
-            <SliderTrack>
-              <SliderFilledTrack />
-            </SliderTrack>
-            <SliderThumb />
-          </Slider>
+          <Progress value={macros.fat} />
         </div>
         <FooterPlan />
-<Footer/>
-
+        <Footer />
       </div>
     </div>
   );

@@ -71,7 +71,11 @@ export default function FoodPlan({ display }) {
         "mildWeightLoss"
       );
       setCalsRequired(calsNeed.mildWeightGain);
-      setPlan({ carb: 40, protein: 30, fat: 30 });
+      setPlan({ carb: 45, protein: 25, fat: 30 });
+      localStorage.setItem(
+        "macros",
+        JSON.stringify({ carb: 45, protein: 25, fat: 30 })
+      );
     } else if (temp > 0) {
       macros = fitnessCalculatorFunctions.macros(
         gender,
@@ -82,7 +86,11 @@ export default function FoodPlan({ display }) {
         "mildWeightGain"
       );
       setCalsRequired(calsNeed.mildWeightLoss);
-      setPlan({ carb: 40, protein: 30, fat: 30 });
+      setPlan({ carb: 40, protein: 25, fat: 25 });
+      localStorage.setItem(
+        "macros",
+        JSON.stringify({ carb: 40, protein: 25, fat: 25 })
+      );
     } else {
       macros = fitnessCalculatorFunctions.macros(
         gender,
@@ -94,6 +102,10 @@ export default function FoodPlan({ display }) {
       );
       setCalsRequired(calsNeed.balance);
       setPlan({ carb: 40, protein: 30, fat: 30 });
+      localStorage.setItem(
+        "macros",
+        JSON.stringify({ carb: 40, protein: 30, fat: 30 })
+      );
     }
     setMacros(macros);
   }, []);
