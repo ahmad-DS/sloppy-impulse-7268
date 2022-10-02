@@ -99,39 +99,6 @@ const UserNavbar = () => {
 	)
 }
 
-const UserNavbar = () => {
-  return (
-    <Flex direction="column" backgroundColor={"green"}>
-      <Flex>
-        <HStack spacing={20}>
-          <Image
-            h="60px"
-            src="https://s3.amazonaws.com/img.mynetdiary.com/logo_react.png"
-          />
-          {/* calendar component */}
-          <Calendar1 />
-        </HStack>
-        <Spacer />
 
-        <Box p="4">
-          <Image src="https://www.mynetdiary.com/img/Premium_planning_x2.png" />
-        </Box>
-      </Flex>
-      <Flex justifyContent="space-around">
-        {links.map((el) => (
-          <Box>
-            <NavLink
-              style={({ isActive }) => (isActive ? activeStyle : baseStyle)}
-              to={el.to}
-              key={el.to}
-            >
-              {el.title}
-            </NavLink>
-          </Box>
-        ))}
-      </Flex>
-    </Flex>
-  );
-};
 
 export default UserNavbar;
