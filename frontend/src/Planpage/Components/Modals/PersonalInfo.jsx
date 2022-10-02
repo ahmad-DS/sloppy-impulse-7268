@@ -14,8 +14,36 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { CgProfile } from "react-icons/cg";
+import { useDispatch, useSelector } from "react-redux";
 const PersonalInfo = () => {
-  const setValue = {};
+
+  const dispatch = useDispatch();
+const setValue=()=>{
+
+}
+const [wholedata, setWholedata] = React.useState("");
+const [personal, setPersonal] = React.useState([]);
+const [date, setDate] = React.useState("");
+const data = useSelector((store) => store.Appreducer.data);
+
+React.useEffect(() => {console.log(wholedata);}, [personal,wholedata]);
+const handleclick = () => {};
+React.useEffect(() => {
+  if (data.length > 0) {
+    setPersonal(data[0]);
+    setWholedata(`${data[0].email} ${data[0].date_of_birth}  ${data[0].gender}`)
+    console.log(data[0].date_of_birth);
+    setDate(data[0].date_of_birth)
+  }
+}, [data]);
+
+
+
+
+
+  const handlechange=()=>{
+
+  }
   return (
     <>
       <Accordion defaultIndex={[0]} allowToggle width={"100%"}>
@@ -35,7 +63,8 @@ const PersonalInfo = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4} width={"50%"}>
-                <Input type="text" />
+
+                <Input type="text" onChange={handlechange} value={wholedata}/>
               </AccordionPanel>
 
               <AccordionPanel pb={4} width={"50%"}>
@@ -51,7 +80,7 @@ const PersonalInfo = () => {
 
               <AccordionPanel pb={4} width={"50%"}>
                 <h1>Date of Birth</h1>
-                <Input type="date" />
+                <Input type="date" onChange={handlechange} value={date}/>
               </AccordionPanel>
 
               <AccordionPanel pb={4} width={"50%"}>
@@ -68,7 +97,7 @@ const PersonalInfo = () => {
 
               <AccordionPanel pb={4}>
                 <h1>Body Mass Index</h1>
-                <Input type="number" width={"50%"} />
+                <Input type="number" width={"50%"} onChange={handlechange}/>
                 <h1>
                   BMI is an estimate of body fat and a good measure of risk for
                   diseases that can occur with overweight people. Your BMI is
@@ -78,7 +107,7 @@ const PersonalInfo = () => {
 
               <AccordionPanel pb={4}>
                 <h1> Basal Metabolic Rate (BMR)</h1>
-                <Input type="number" width={"50%"} />
+                <Input type="number" width={"50%"} onChange={handlechange}/>
 
                 <h1>
                   Daily food calories needed to maintain your body weight. To

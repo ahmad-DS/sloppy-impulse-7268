@@ -15,8 +15,6 @@ import {
   Box,
 } from "@chakra-ui/react";
 const MinimiumCalorie = () => {
-
-
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = React.useRef(null);
@@ -27,7 +25,7 @@ const MinimiumCalorie = () => {
   return (
     <>
       <Box onClick={onOpen} width={"30%"} variant="unstyled">
-        <Input type="text"  onChange={handlechange} />
+        <Input type="text" onChange={handlechange} />
       </Box>
 
       <Modal
@@ -38,16 +36,11 @@ const MinimiumCalorie = () => {
       >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader  >Minimum Calorie Budget</ModalHeader>
+          <ModalHeader>Minimum Calorie Budget</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
-            
-              <Input
-                ref={initialRef}
-                
-                onChange={handlechange}
-              />
+              <Input ref={initialRef} onChange={handlechange} />
             </FormControl>
 
             <FormControl mt={4}>
@@ -60,7 +53,10 @@ const MinimiumCalorie = () => {
                     justifyContent: "center",
                   }}
                 >
-                 If you are on a medically supervised diet, you may need to adjust the minimum calorie budget. Please notice that this may be dangerous to you health and could be done only under guidance of a medical professional.
+                  If you are on a medically supervised diet, you may need to
+                  adjust the minimum calorie budget. Please notice that this may
+                  be dangerous to you health and could be done only under
+                  guidance of a medical professional.
                 </h5>
               </FormLabel>
             </FormControl>

@@ -52,7 +52,7 @@ const WeeklyRate = () => {
             <FormControl>
               {weeklyobj?.map((e,index) => (
                 <Stack spacing={5} direction="column" key={index}>
-                  <Checkbox>{e.name}</Checkbox>
+                  <Checkbox onChange={handlechange}>{e.name}</Checkbox>
                 </Stack>
               ))}
             </FormControl>

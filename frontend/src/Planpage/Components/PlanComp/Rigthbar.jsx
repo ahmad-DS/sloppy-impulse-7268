@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../Styles/Right.module.css";
-import Modalcomp from "../Modals/Modalcomp"
+import Modalcomp from "../Modals/Modalcomp";
 import Daily from "../Modals/Daily";
 import DateModal from "../Modals/DateModal";
 import MinimiumCalorie from "../Modals/MinimiumCalorie";
@@ -8,15 +8,26 @@ import PersonalInfo from "../Modals/PersonalInfo";
 import TargetModal from "../Modals/TargetModal";
 import WeeklyRate from "../Modals/WeeklyRate";
 import FooterPlan from "./FooterPlan";
-import { useSelector } from "react-redux";
-const Rigthbar = () => {
 
- 
+import { Button } from "@chakra-ui/react";
+import { useSelector } from "react-redux";
+
+const Rigthbar = () => {
+  const dailydata = useSelector((store) => store.Appreducer.data);
+  let results;
+
+  const [data, setData] = React.useState();
+  React.useEffect(() => {
+    results = localStorage.getItem("cal");
+    setData(results);
+  }, [data, dailydata]);
   return (
     <div className={styles.container}>
       <div className={styles.innercontainer}>
         <h1>
-          I plan to maintain current weight by eating about <Modalcomp /> daily.
+          I plan to maintain current weight by eating about
+   
+          <Button color={"green"}>{data}</Button>
         </h1>
       </div>
       <div className={styles.innercontainerdiv1}>
@@ -27,13 +38,13 @@ const Rigthbar = () => {
       <div className={styles.innercontainerdiv1}>
         <h1>Target Weight</h1>
 
-        <TargetModal/>
+        <TargetModal />
       </div>
 
       <div className={styles.innercontainerdiv1}>
         <h1>Target Date</h1>
 
-        <DateModal />
+        {/* <DateModal /> */}
       </div>
       <div className={styles.innercontainerdiv1}>
         <h1>Change Weekly Rate</h1>
@@ -55,9 +66,8 @@ const Rigthbar = () => {
         <PersonalInfo />
       </div>
 
-
       <div className={styles.footer}>
-      <FooterPlan/>
+        <FooterPlan />
       </div>
     </div>
   );

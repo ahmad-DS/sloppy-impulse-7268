@@ -9,12 +9,12 @@ const SidebarRoutes = () => {
   return (
    <>
    <Routes>
-    <Route path='/' element={<Weigth></Weigth>}></Route>
-    <Route path='/weigth' element={<Weigth></Weigth>}></Route>
-    <Route path='/carb' element={<Carb></Carb>}></Route>
-    <Route path='/exercise' element={<Exercise></Exercise>}></Route>
-    <Route path='/nutrient' element={<Nutrient></Nutrient>}></Route>
-    <Route path='/cycling' element={<Carb></Carb>}></Route>
+    <Route path='/user/plan' element={<Weigth/>}></Route>
+    <Route path='/user/plan/weigth' element={<Weigth/>}></Route>
+    <Route path='/user/plan/carbs' element={<Carb/>}></Route>
+    <Route path='/user/plan/exercise' element={<Exercise/>}></Route>
+    <Route path='/user/plan/nutrient' element={<Nutrient/>}></Route>
+    <Route path='/user/plan/cycling' element={<Carb/>}></Route>
 
    </Routes>
    </>
