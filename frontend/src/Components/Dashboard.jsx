@@ -32,7 +32,7 @@ const Dashboard = () => {
                   Calorie Budget
                 </Text>
                 <Heading color="rgb(55, 146, 180)" fontSize="25px">
-                  {Math.floor(+localStorage.getItem("calsRequired"))} cals
+                  {Math.floor(+localStorage.getItem("calsRequired")) || 0} cals
                 </Heading>
               </VStack>
               <Spacer />
